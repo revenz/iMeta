@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<movies>
+  <set name="American Pie" match="^American Pie" />
+  <set name="The Lion King" match="^The Lion King" />
+  <set name="Chuggington" match="^Chuggington" />
+  <set name="DC Showcase" match="DC Showcase" />
+  <set name="Final Fantasy" match="^Final Fantasy" />
+  <set name="Ghost Rider" match="^Ghost Rider" />
+  <set name="Go Diego Go!" match="^Go Diego Go">
+    <replacement regex="Go Diego Go[^!]" value="Go Diego Go!" />
+    <replacement regex="Go Diego Go!:" value="Go Diego Go! - " />
+  </set>  
+  <set name="Dora the Explorer" match="Dora the Explorer">
+    <replacement regex="Dora The Explorer" value="Dora the Explorer" />
+    <replacement regex="Dora the Explorer - " value="Dora the Explorer: " /> 
+  </set>
+  <set name="Barbie" match="^Barbie" />
+  <set name="Thomas the Tank Engine" match="^(Thomas (and|&amp;) friends|Thomas the tank Engine)">
+    <replacement regex="Thomas The Tank Engine" value="Thomas the Tank Engine" />
+    <replacement regex="Thomas the Tank Engine - " value="Thomas the Tank Engine: " />
+    <replacement regex="Thomas the Tank Engine " value="Thomas the Tank Engine: " />
+    <replacement regex="Thomas &amp; Friends" value="Thomas and Friends" />
+    <replacement regex="Thomas And Friends" value="Thomas and Friends " />
+    <replacement regex="Thomas and Friends - " value="Thomas and Friends: " />
+    <replacement regex="Thomas and Friends " value="Thomas and Friends: " />
+  </set>
+  <set name="Frank Sinatra" match="(Frank Sinatra)|(The Rat Pack)" />
+  <set name="Robbie Williams" match="Robbie Williams" />
+  <set name="Michael Jackson" match="Michael Jackson" />
+  <set name="ABBA" match="ABBA" />
+  <set name="Bee Gees" match="Bee Gees" />
+  <set name="Billy Joel" match="Billy Joel" />
+  <set name="David Bowie" match="David Bowie" />
+  <set name="Dusty Springfield" match="Dusty Springfield" />
+  <set name="Elton John" match="Elton John" />
+  <set name="Il Divo" match="Il Divo" />
+  <set name="Neil Diamond" match="Neil Diamond" />
+  <set name="Patrizio Buanne" match="Patrizio Buanne" />
+  <set name="Rod Stewart" match="Rod Stewart" />
+  <set name="Ronan Keating" match="Ronan Keating" />
+  <set name="Shania Twain" match="Shania Twain" />
+  <set name="Tom Jones" match="Tom Jones" />
+  <set name="Green Day" match="Green Day" />
+  <set name="Metallica" match="Metallica" />
+  <set name="Iron Maiden" match="Iron Maiden" />
+   
+  <set name="Batman">
+    <movie name="Batman: The Movie" sort="Batman 000" />
+    <movie name="Batman" year="1989" rename="Batman I" sort="Batman 001" />
+    <movie name="Batman Returns" rename="Batman II: Batman Returns" sort="Batman 002" />
+    <movie name="Batman Forever" rename="Batman III: Batman Forever" sort="Batman 003" />
+    <movie name="Batman and Robin" rename="Batman IV: Batman and Robin" sort="Batman 004" />
+    <movie name="Batman &amp; Robin" rename="Batman IV: Batman and Robin" sort="Batman 004" />
+    <movie name="Batman Begins" rename="Batman V: Batman Begins" sort="Batman 005" />
+    <movie name="The Dark Knight" year="2008" rename="Batman VI: The Dark Knight" sort="Batman 006" />
+    <movie name="The Dark Knight Rises" rename="Batman VII: The Dark Knight Rises" sort="Batman 007" />
+  </set>
+
+  <set name="Batman Animated">
+    <movie name="Batman: Mask of the Phantasm" rename="Batman Animated I: Batman: Mask of the Phantasm" sort="Batman Animated 001" />
+    <movie name="SubZero" year="1998" rename="Batman Animated II: SubZero" sort="Batman Animated 002" />
+    <movie name="Batman &amp; Mr. Freeze: SubZero" year="1998" rename="Batman Animated II: SubZero" sort="Batman Animated 002" />
+    <movie name="Batman Beyond: Return of the Joker" rename="Batman Animated III: Batman Beyond - Return of the Joker" sort="Batman Animated 003" />
+    <movie name="Batman: Mystery of the Batwoman" rename="Batman Animated IV: Mystery of the Batwoman" sort="Batman Animated 004" />
+    <movie name="The Batman vs Dracula: The Animated Movie" rename="Batman Animated V: The Batman vs Dracula" sort="Batman Animated 005" />
+    <movie name="The Batman vs Dracula" rename="Batman Animated V: The Batman vs Dracula" sort="Batman Animated 005" />
+    <movie name="Batman: Gotham Knight" rename="Batman Animated VI: Gotham Knight" sort="Batman Animated 006" />
+    <movie name="Batman: Under the Red Hood" rename="Batman Animated VII: Under the Red Hood" sort="Batman Animated 007" />
+    <movie name="Batman: Year One" rename="Batman Animated: VIII: Year One" sort="Batman Animated 008" />
+  </set>
+
+  <set name="Batman/Superman">
+    <movie name="The Batman Superman Movie: World's Finest" rename="Batman/Superman I: World's Finest " sort="Batman/Superman 001" />
+    <movie name="Superman/Batman: Public Enemies" rename="Batman/Superman II: Public Enemies" sort="Batman/Superman 002" />
+    <movie name="Superman/Batman: Apocalypse" rename="Batman/Superman III: Apocalypse" sort="Batman/Superman 003" />
+  </set>
+
+  <set name="The Matrix">
+    <movie name="The Matrix" rename="The Matrix I" />
+    <movie name="The Matrix Reloaded" rename="The Matrix II: Reloaded" />
+    <movie name="The Matrix Revolutions" rename="The Matrix III: Revolutions" />
+  </set>
+
+  <set name="Final Destination">
+    <movie name="Final Destination" rename="Final Destination I" />
+    <movie name="Final Destination 2" rename="Final Destination II" />
+    <movie name="Final Destination 3"  rename="Final Destination III" />
+    <movie name="The Final Destination" rename="Final Destination IV: The Final Destination" />
+    <movie name="Final Destination 4" rename="Final Destination IV: The Final Destination" />
+    <movie name="Final Destination 5" rename="Final Destination V" />
+  </set>
+
+  <set name="Fast and the Furious">
+    <movie name="The Fast and the Furious" year="2001" rename="The Fast and the Furious I" />
+    <movie name="2 Fast 2 Furious" rename="The Fast and the Furious II: 2 Fast 2 Furious" />
+    <movie name="The Fast and the Furious 3 - Tokyo Drift" rename="The Fast and the Furious III: Tokyo Drift" />
+    <movie name="The Fast and the Furious: Tokyo Drift" rename="The Fast and the Furious III: Tokyo Drift" />
+    <movie name="Fast and Furious" year="2009" rename="The Fast and the Furious IV: Fast and Furious" />
+    <movie name="Fast &amp; Furious" year="2009" rename="The Fast and the Furious IV: Fast and Furious" />
+    <movie name="Fast 5" rename="The Fast and the Furious V: Fast Five" />
+    <movie name="Fast Five" rename="The Fast and the Furious V: Fast Five" />
+    <movie name="Fast and Furious 5" rename="The Fast and the Furious V: Fast Five" />
+  </set>
+
+  <set name="Aladdin">
+    <movie name="Aladdin" year="1992" rename="Aladddin I" />
+    <movie name="Aladdin and the Return of Jafar" rename="Aladdin II: The Return of Jafar" />
+    <movie name="Aladdin: The Return of Jafar" rename="Aladdin II: The Return of Jafar" />
+    <movie name="Aladdin and the King of Thieves" rename="Aladdin III: The King of Thieves" />
+  </set>
+
+  <set name="Back to the Future">
+    <movie name="Back to the Future" rename="Back to the Future Part I" />
+    <movie name="Back to the Future Part II" rename="Back to the Future Part II" />
+    <movie name="Back to the Future Part III" rename="Back to the Future Part III" />
+  </set>
+
+  <set name="Atlantis">
+    <movie name="Atlantis: The Lost Empire" rename="Atlantis I: The Lost Empire" />
+    <movie name="Atlantis: Milo's Return" rename="Atlantis II: Milo's Return" />
+  </set>
+
+  <set name="Planet of the Apes">
+    <movie name="Planet of the Apes" year="1968" rename="Planet of the Apes I" />
+    <movie name="Beneath the Planet of the Apes" rename="Planet of the Apes II: Beneath the Planet of the Apes" />
+    <movie name="Planet of the Apes: Beneath the Planet of the Apes" rename="Planet of the Apes II: Beneath the Planet of the Apes" />
+    <movie name="Escape from the Planet of the Apes" rename="Planet of the Apes III: Escape from the Planet of the Apes" />
+    <movie name="Planet of the Apes: Escape from the Planet of the Apes" rename="Planet of the Apes III: Escape from the Planet of the Apes" />
+    <movie name="Conquest of the Planet of the Apes" rename="Planet of the Apes IV: Conquest of the Planet of the Apes" />
+    <movie name="Planet of the Apes: Conquest of the Planet of the Apes" rename="Planet of the Apes IV: Conquest of the Planet of the Apes" />
+    <movie name="Battle for the Planet of the Apes" rename="Planet of the Apes V: Battle for the Planet of the Apes" />
+    <movie name="Planet of the Apes: Battle for the Planet of the Apes" rename="Planet of the Apes V: Battle for the Planet of the Apes" />
+    <movie name="Planet of the Apes" year="2001" rename="Planet of the Apes VI: Planet of the Apes (Remake)" />
+    <movie name="Rise of the Planet of the Apes" rename="Planet of the Apes VII: Rise of the Planet of the Apes" />
+    <movie name="Planet of the Apes: Rise of the Planet of the Apes" rename="Planet of the Apes VII: Rise of the Planet of the Apes" />
+  </set>
+  
+  <set name="Bridget Jones">
+    <movie name="Bridget Jones' Diary" rename="Bridget Jones I: Bridget Jones' Diary" />
+    <movie name="Bridget Jones the Edge of Reason" rename="Bridget Jones II: The Edge of Reason" />
+    <movie name="Bridget Jones: The Edge of Reason" rename="Bridget Jones II: The Edge of Reason" />
+  </set>
+
+  <set name="Harry Potter">
+    <movie name="Harry Potter and the Sorcerer's Stone" rename="Harry Potter I: Harry Potter and the Sorcerer's Stone" sort="Harry Potter 001" />
+    <movie name="Harry Potter and the Chamber of Secrets" rename="Harry Potter II: Harry Potter and the Chamber of Secrets" sort="Harry Potter 002" />
+    <movie name="Harry Potter and the Prisoner of Azkaban" rename="Harry Potter III: Harry Potter and the Prisoner of Azkaban" sort="Harry Potter 003" />
+    <movie name="Harry Potter and the Goblet of Fire" rename="Harry Potter IV: Harry Potter and the Goblet of Fire" sort="Harry Potter 004" />
+    <movie name="Harry Potter and the Order of the Phoenix" rename="Harry Potter V: Harry Potter and the Order of the Phoenix" sort="Harry Potter 005" />
+    <movie name="Harry Potter and the Half Blood Prince" rename="Harry Potter VI: Harry Potter and the Half Blood Prince" sort="Harry Potter 006" />
+    <movie name="Harry Potter and the Half-Blood Prince" rename="Harry Potter VI: Harry Potter and the Half Blood Prince" sort="Harry Potter 006" />
+    <movie name="Harry Potter and the Deathly Hallows: Part 1" rename="Harry Potter VII: Harry Potter and the Deathly Hallows: Part 1" sort="Harry Potter 007" />
+    <movie name="Harry Potter and the Deathly Hallows: Part 2" rename="Harry Potter VIII: Harry Potter and the Deathly Hallows: Part 2" sort="Harry Potter 008" />
+  </set>
+
+  <set name="Indiana Jones">
+    <movie name="Raiders of the Lost Ark" rename="Indiana Jones I: Raiders of the Lost Ark" />
+    <movie name="Indiana Jones and the Raiders of the Lost Ark" rename="Indiana Jones I: Raiders of the Lost Ark" />
+    <movie name="Indiana Jones and the Temple of Doom" rename="Indiana Jones II: Temple of Doom" />
+    <movie name="Indiana Jones and the Last Crusade" rename="Indiana Jones III: The Last Crusade" />
+    <movie name="Indiana Jones and the Kingdom of the Crystal Skull" rename="Indiana Jones IV: Kingdom of the Crystal Skull" />
+    <movie name="Indiana Jones: Making the Trilogy" sort="Indiana Jones 999" />
+  </set>
+
+  <set name="Tomb Raider">
+    <movie name="Tomb Raider" rename="Tomb Raider I" />
+    <movie name="Lara Croft: Tomb Raider" rename="Tomb Raider I" />
+    <movie name="Lara Croft: Tomb Raider - The Cradle of Life" rename="Tomb Raider II: The Cradle of Life" />
+  </set>
+
+  <set name="Die Hard">
+    <movie name="Die Hard" rename="Die Hard I" />
+    <movie name="Die Harder" rename="Die Hard II: Die Harder" />
+    <movie name="Die Hard 2: Die Harder" rename="Die Hard II: Die Harder" />
+    <movie name="Die Hard with a Vengeance" rename="Die Hard III: Die Hard with a Vengeance" />
+    <movie name="Die Hard: With a Vengeance" rename="Die Hard III: Die Hard with a Vengeance" />
+    <movie name="Live Free or Die Hard" rename="Die Hard IV: Live Free or Die Hard" />
+  </set>
+
+  <set name="Dragonheart">
+    <movie name="DragonHeart" rename="Dragonheart I" />
+    <movie name="Dragonheart: A New Beginning" rename="Dragonheart II: A New Beginning" />
+  </set>
+
+  <set name="Eddie Murphy">
+    <movie name="Eddie Murphy Delirious" rename="Eddie Murphy: Delirious" />
+    <movie name="Eddie Murphy Raw" rename="Eddie Murphy: Raw" />
+    <movie name="Eddie Murphy: Delirious" rename="Eddie Murphy: Delirious" />
+    <movie name="Eddie Murphy: Raw" rename="Eddie Murphy: Raw" />
+  </set>
+
+  <set name="Gremlins">
+    <movie name="Gremlins" rename="Gremlins I" />
+    <movie name="Gremlins 2: The New Batch" rename="Gremlins II: The New Batch" />
+  </set>
+
+  <set name="Harold &amp; Kumar">
+    <movie name="Harold &amp; Kumar Go to White Castle" rename="Harold &amp; Kumar I: Harold &amp; Kumar Go to White Castle" />
+    <movie name="Harold &amp; Kumar Escape from Guantanamo Bay" rename="Harold &amp; Kumar II: Harold &amp; Kumar Escape from Guantanamo Bay" />
+    <movie name="Harold &amp; Kumar: Escape from Guantanamo Bay" rename="Harold &amp; Kumar II: Harold &amp; Kumar Escape from Guantanamo Bay" />
+    <movie name="A Very Harold &amp; Kumar 3D Christmas" rename="Harold &amp; Kumar III: A Very Harold &amp; Kumar 3D Christmas" />
+  </set>
+
+  <set name="How to Train Your Dragon">
+    <movie name="How to Train Your Dragon" rename="How to Train Your Dragon I" />
+    <movie name="How to Train Your Dragon 2" rename="How to Train Your Dragon II" />
+  </set>
+
+  <set name="Ice Age">
+    <movie name="Ice Age" rename="Ice Age I" />
+    <movie name="Ice Age: The Meltdown" rename="Ice Age II: The Meltdown" />
+    <movie name="Ice Age: Dawn of the Dinosaurs" rename="Ice Age III: Dawn of the Dinosaurs" />
+    <movie name="Ice Age: Continental Drift" rename="Ice Age IV: Continental Drift" />
+  </set>
+
+  <set name="Kung Fu Panda">
+    <movie name="Kung Fu Panda" rename="Kung Fu Panda I" />
+    <movie name="Kung Fu Panda 2" rename="Kung Fu Panda II" />
+  </set>
+
+  <set name="Madagascar">
+    <movie name="Madagascar" rename="Madagascar I" year="2005" />
+    <movie name="Madagascar: Escape 2 Africa" rename="Madagascar II: Escape 2 Africa" />
+    <movie name="Madagascar 3: Europe's Most Wanted" rename="Madagascar III: Europe's Most Wanted" />
+  </set>
+
+  <set name="Monsters, Inc.">
+    <movie name="Monsters, Inc." rename="Monsters, Inc." />
+    <movie name="Monsters University" rename="Monsters, Inc. II: Monsters University" />
+  </set>
+
+  <set name="National Treasure">
+    <movie name="National Treasure" rename="National Treasure I" />
+    <movie name="National Treasure: Book of Secrets" rename="National Treasure II: Book of Secrets" />
+  </set>
+
+  <set name="Night at the Museum">
+    <movie name="Night at the Museum" rename="Night at the Museum I" />
+    <movie name="Night at the Museum: Battle of the Smithsonian" rename="Night at the Museum II: Battle of the Smithsonian" />
+  </set>
+
+  <set name="Pirates of the Caribbean">
+    <movie name="Pirates of the Caribbean: The Curse of the Black Pearl" rename="Pirates of the Caribbean I: The Curse of the Black Pearl" />
+    <movie name="Pirates of the Caribbean: Dead Man's Chest" rename="Pirates of the Caribbean II: Dead Man's Chest" />
+    <movie name="Pirates of the Caribbean: At World's End" rename="Pirates of the Caribbean III: At World's End" />
+    <movie name="Pirates of the Caribbean: On Stranger Tides" rename="Pirates of the Caribbean IV: On Stranger Tides" />
+  </set>
+
+  <set name="Star Wars">
+    <movie name="Star Wars: Episode I - The Phantom Menace" rename="Star Wars Episode I: The Phantom Menace" />
+    <movie name="Star Wars: Episode II - Attack of the Clones" rename="Star Wars Episode II: Attack of the Clones" />
+    <movie name="Star Wars: Episode III - Revenge of the Sith" rename="Star Wars Episode III: Revenge of the Sith" />
+    <movie name="Star Wars" rename="Star Wars Episode IV: A New Hope" year="1977" />
+    <movie name="Star Wars: Episode IV - A New Hope" rename="Star Wars Episode IV: A New Hope" year="1977" />
+    <movie name="Star Wars: Episode V - The Empire Strikes Back" rename="Star Wars Episode V: The Empire Strikes Back" />
+    <movie name="Star Wars: Episode VI - Return of the Jedi" rename="Star Wars Episode VI: Return of the Jedi" />
+    <movie name="Star Wars: The Clone Wars" />
+  </set>
+
+  <set name="Porky's">
+    <movie name="Porky's" rename="Porky's I" />
+    <movie name="Porky's II: The Next Day" rename="Porky's II: The Next Day" />
+    <movie name="Porky's 3: Revenge" rename="Porky's III: Revenge" />
+  </set>
+
+  <set name="American Pie">
+    <movie name="American Pie" rename="American Pie I" />
+    <movie name="American Pie 2" rename="American Pie II" />
+    <movie name="American Wedding" rename="American Pie III: American Wedding" />
+    <movie name="American Union" rename="American Pie IV: American Union" />
+  </set>
+
+  <set name="Rambo">
+    <movie name="First Blood" rename="Rambo I: First Blood Part I" />
+    <movie name="Rambo: First Blood" rename="Rambo I: First Blood Part I" />
+    <movie name="Rambo: First Blood Part II" rename="Rambo II: First Blood Part II" />
+    <movie name="Rambo III" rename="Rambo III" />
+    <movie name="Rambo" year="2008" rename="Rambo IV" />
+    <movie name="Rambo: Last Stand" rename="Rambo V: Last Stand" />
+  </set>
+
+  <set name="Rocky">
+    <movie name="Rocky" rename="Rocky I" year="1976" />
+    <movie name="Rocky II" rename="Rocky II" />
+    <movie name="Rocky III" rename="Rocky III" />
+    <movie name="Rocky IV" rename="Rocky IV" />
+    <movie name="Rocky V" rename="Rocky V" />
+    <movie name="Rocky Balboa" rename="Rocky VI: Rocky Balboa" />
+  </set>
+
+  <set name="Rush Hour">
+    <movie name="Rush Hour" rename="Rush Hour I" />
+    <movie name="Rush Hour 2" rename="Rush Hour II" />
+    <movie name="Rush Hour 3" rename="Rush Hour III" />
+  </set>
+
+  <set name="Scooby Doo">
+    <movie name="Scooby-Doo" rename="Scooby Doo I" year="2002" />
+    <movie name="Scooby Doo" rename="Scooby Doo I" year="2002" />
+    <movie name="Scooby Doo 2: Monsters Unleashed" rename="Scooby Doo II: Monsters Unleashed" />
+    <movie name="Scooby-Doo 2: Monsters Unleashed" rename="Scooby Doo II: Monsters Unleashed" /> 
+  </set>
+
+  <set name="Shanghai Noon">
+    <movie name="Shanghai Noon" rename="Shanghai Noon I" sort="Shanghai Noon 001" />
+    <movie name="Shanghai Knights" rename="Shanghai Noon II: Shanghai Knights" sort="Shanghai Noon 002" />
+  </set>
+
+  <set name="Short Circuit">
+    <movie name="Short Circuit" rename="Short Circuit I" year="1986" />
+    <movie name="Short Circuit 2" rename="Short Circuit II" />
+  </set>
+
+  <set name="Shrek">
+    <movie name="Shrek" rename="Shrek I" />
+    <movie name="Shrek 2" rename="Shrek II" />
+    <movie name="Shrek the Third" rename="Shrek III: The Third" />
+    <movie name="Shrek Forever After" rename="Shrek IV: Shrek Forever After" />
+    <movie name="Shrek the Halls" sort="Shrek 100" />
+    <movie name="Scared Shrekless" sort="Shrek 101" />
+    <movie name="Donkey's Caroling Christmas-tacular" sort="Shrek 102" />
+  </set>
+
+  <set name="Tarzan">
+    <movie name="Tarzan" rename="Tarzan I" year="1999" />
+    <movie name="Tarzan II" rename="Tarzan II" year="2005" />
+  </set>
+
+  <set name="Teen Wolf">
+    <movie name="Teen Wolf" rename="Teen Wolf" />
+    <movie name="Teen Wolf Too" rename="Teen Wolf Too" />
+  </set>
+
+  <set name="Terminator">
+    <movie name="The Terminator" rename="Terminator I: The Terminator" />
+    <movie name="Terminator 2: Judgment Day" rename="Terminator II: Judgment Day" />
+    <movie name="Terminator 3: Rise of the Machines" rename="Terminator III: Rise of the Machines" />
+    <movie name="Terminator Salvation" rename="Terminator IV: Salvation" />
+    <movie name="Terminator: Salvation" rename="Terminator IV: Salvation" />
+  </set>
+
+  <set name="The Boondock Saints">
+    <movie name="The Boondock Saints" rename="The Boondock Saints I" />
+    <movie name="The Boondock Saints II: All Saints Day" rename="The Boondock Saints II: All Saints Day " />
+  </set>
+
+  <set name="The Chronicles of Narnia">
+    <movie year="2005" name="The Chronicles of Narnia: The Lion, the Witch and the Wardrobe" rename="The Chronicles of Narnia I: The Lion, the Witch and the Wardrobe" />
+    <movie year="2008" name="The Chronicles of Narnia: Prince Caspian" rename="The Chronicles of Narnia II: Prince Caspian" />
+    <movie year="2010" name="The Chronicles of Narnia: The Voyage of the Dawn Treader" rename="The Chronicles of Narnia III: The Voyage of the Dawn Treader" />
+    <movie name="The Chronicles of Narnia: The Silver Chair" rename="The Chronicles of Narnia IV: The Silver Chair" />
+  </set>
+
+  <set name="The Hangover">
+    <movie name="The Hangover" rename="The Hangover Part I" />
+    <movie name="The Hangover Part II" rename="The Hangover Part II" />
+    <movie name="The Hangover Part III" rename="The Hangover Part III" />
+  </set>
+
+  <set name="The Lion King">
+    <movie name="The Lion King" rename="The Lion King I" />
+    <movie name="The Lion King 2: Simba's Pride" rename="The Lion King II: Simba's Pride" />
+    <movie name="The Lion King II: Simba's Pride" rename="The Lion King II: Simba's Pride" />
+  </set>
+
+  <set name="The Little Mermaid">
+    <movie name="The Little Mermaid" rename="The Little Mermaid I" />
+    <movie name="The Little Mermaid 2: Return to the Sea" rename="The Little Mermaid II: Return to the Sea" />
+    <movie name="The Little Mermaid II: Return to the Sea" rename="The Little Mermaid II: Return to the Sea" />
+    <movie name="The Little Mermaid: Ariel's Beginning" rename="The Little Mermaid III: Ariel's Beginning" />
+  </set>
+
+  <set name="The Mummy">
+    <movie name="The Mummy" rename="The Mummy I" year="1999" />
+    <movie name="The Mummy Returns" rename="The Mummy II: The Mummy Returns" />
+    <movie name="The Mummy: Tomb of the Dragon Emperor" rename="The Mummy III: Tomb of the Dragon Emperor" />
+  </set>
+
+  <set name="Tinker Bell">
+    <movie name="Tinker Bell" rename="Tinker Bell I" />
+    <movie name="Tinker Bell and the Lost Treasure" rename="Tinker Bell II: Tinker Bell and the Lost Treasure" />
+    <movie name="Tinker Bell and the Great Fairy Rescue" rename="Tinker Bell III: Tinker Bell and the Great Fairy Rescue" />
+    <movie name="Tinker Bell: Secret of the Wings" rename="Tinker Bell IV: Secret of the Wings " />
+  </set>
+
+  <set name="Toy Story">
+    <movie name="Toy Story" rename="Toy Story I" />
+    <movie name="Toy Story 2" rename="Toy Story II" />
+    <movie name="Toy Story 3" rename="Toy Story III" />
+  </set>
+
+  <set name="Spider-Man">
+    <movie name="Spider-Man" rename="Spider-Man I" year="2002" />
+    <movie name="Spider-Man 2" rename="Spider-Man II" />
+    <movie name="Spider-Man 3" rename="Spider-Man III" />
+  </set>
+
+  <set name="Transformers">
+    <movie name="Transformers" rename="Transformers I" year="2007" />
+    <movie name="Transformers: Revenge of the Fallen" rename="Transformers II: Revenge of the Fallen" />
+    <movie name="Transformers: Dark of the Moon" rename="Transformers III: Dark of the Moon" />
+  </set>
+
+  <set name="Underworld">
+    <movie name="Underworld" rename="Underworld I" />
+    <movie name="Underworld: Evolution" rename="Underworld II: Evolution" />
+    <movie name="Underworld: Rise of the Lycans" rename="Underworld III: Rise of the Lycans" />
+    <movie name="Underworld Awakening" rename="Underworld IV: Awakening" />
+  </set>
+
+  <set name="Grumpy Old Men">
+    <movie name="Grumpy Old Men" rename="Grumpy Old Men I" />
+    <movie name="Grumpier Old Men" rename="Grumpy Old Men II: Grumpier Old Men" />
+  </set>
+
+  <set name="The Land Before Time">
+    <!--match="^The Land Before Time"-->
+    <movie name="The Land Before Time" year="1988" rename="The Land Before Time I" sort="The Land Before Time 001" />
+    <movie name="The Land Before Time II: The Great Valley Adventure" rename="The Land Before Time II: The Great Valley Adventure" sort="The Land Before Time 002" />
+    <movie name="The Land Before Time III: The Time of the Great Giving" rename="The Land Before Time III: The Time of the Great Giving" sort="The Land Before Time 003" />
+    <movie name="The Land Before Time IV: Journey Through the Mists" rename="The Land Before Time IV: Journey Through the Mists" sort="The Land Before Time 004" />
+    <movie name="The Land Before Time V: The Mysterious Island" rename="The Land Before Time V: The Mysterious Island" sort="The Land Before Time 005" />
+    <movie name="The Land Before Time VI: The Secret of Saurus Rock" rename="The Land Before Time VI: The Secret of Saurus Rock" sort="The Land Before Time 006" />
+    <movie name="The Land Before Time VII: The Stone of Cold Fire" rename="The Land Before Time VII: The Stone of Cold Fire" sort="The Land Before Time 007" />
+    <movie name="The Land Before Time VIII: The Big Freeze" rename="The Land Before Time VIII: The Big Freeze" sort="The Land Before Time 008" />
+    <movie name="The Land Before Time IX: Journey to the Big Water" rename="The Land Before Time IX: Journey to the Big Water" sort="The Land Before Time 009" />
+    <movie name="The Land Before Time X: The Great Longneck Migration" rename="The Land Before Time X: The Great Longneck Migration" sort="The Land Before Time 010" />
+    <movie name="The Land Before Time XI: Invasion of the Tinysauruses" rename="The Land Before Time XI: Invasion of the Tinysauruses" sort="The Land Before Time 011" />
+    <movie name="The Land Before Time XII: The Great Day of the Flyers" rename="The Land Before Time XII: The Great Day of the Flyers" sort="The Land Before Time 012" />
+    <movie name="The Land Before Time XIII: The Wisdom of Friends" rename="The Land Before Time XIII: The Wisdom of Friends" sort="The Land Before Time 013" />
+  </set>
+
+  <set name="28 Days Later">
+    <movie name="28 Days Later" />
+    <movie name="28 Weeks Later" />
+  </set>
+
+  <set name="A Nightmare on Elm Street">
+    <movie name="A Nightmare on Elm Street" year="1984" rename="A Nightmare on Elm Street I" sort="A Nightmare on Elm Street 001" />
+    <movie name="A Nightmare on Elm Street 2: Freddy's Revenge" rename="A Nightmare on Elm Street II: Freddy's Revenge" sort="A Nightmare on Elm Street 002" />
+    <movie name="A Nightmare on Elm Street Part 2: Freddy's Revenge" rename="A Nightmare on Elm Street II: Freddy's Revenge" sort="A Nightmare on Elm Street 002" />
+    <movie name="A Nightmare on Elm Street 3: Dream Warriors" rename="A Nightmare on Elm Street III: Dream Warriors" sort="A Nightmare on Elm Street 003" />
+    <movie name="A Nightmare on Elm Street 4: The Dream Master" rename="A Nightmare on Elm Street IV: : The Dream Master" sort="A Nightmare on Elm Street 004" />
+    <movie name="A Nightmare on Elm Street: The Dream Child" rename="A Nightmare on Elm Street V: The Dream Child" sort="A Nightmare on Elm Street 005" />
+    <movie name="A Nightmare on Elm Street 5: The Dream Child" rename="A Nightmare on Elm Street V: The Dream Child" sort="A Nightmare on Elm Street 005" />
+    <movie name="Freddy's Dead: The Final Nightmare" rename="A Nightmare on Elm Street VI: The Final Nightmare" sort="A Nightmare on Elm Street 006" />
+    <movie name="A Nightmare on Elm Street 6: The Final Nightmare" rename="A Nightmare on Elm Street VI: The Final Nightmare" sort="A Nightmare on Elm Street 006" />
+    <movie name="New Nightmare" year="1994" rename="A Nightmare on Elm Street VII: New Nightmare" sort="A Nightmare on Elm Street 007" />
+    <movie name="A Nightmare on Elm Street 7: New Nightmare" year="1994" rename="A Nightmare on Elm Street VII: New Nightmare" sort="A Nightmare on Elm Street 007" />
+    <movie name="Freddy vs. Jason" rename="A Nightmare on Elm Street VIII: Freddy vs. Jason" sort="A Nightmare on Elm Street 008" />
+    <movie name="A Nightmare on Elm Street" year="2010" rename="A Nightmare on Elm Street IX: A Nightmare on Elm Street (Remake)" sort="A Nightmare on Elm Street 008" />
+  </set>
+
+  <set name="Scream">
+    <movie name="Scream" year="1996" rename="Scream I" />
+    <movie name="Scream 2" rename="Scream II" />
+    <movie name="Scream 3" rename="Scream III" />
+    <movie name="Scream 4" rename="Scream IV" />
+  </set>
+
+  <set name="Evil Dead">
+    <movie name="The Evil Dead" year="1981" rename="Evil Dead I" />
+    <movie name="Evil Dead II" year="1987" rename="Evil Dead II" />
+    <movie name="Army of Darkness" rename="Evil Dead III: Army of Darkness" />
+  </set>
+
+  <set name="BloodRayne">
+    <movie name="BloodRayne" year="2005" rename="BloodRayne I" />
+    <movie name="BloodRayne: Deliverance" rename="BloodRayne II: Deliverance" />
+    <movie name="Bloodrayne: The Third Reich" rename="BloodRayne III: The Third Reich" />
+  </set>
+
+  <set name="Cars">
+    <movie name="Cars" year="2006" rename="Cars I" />
+    <movie name="Cars 2" year="2011" rename="Cars II" />
+  </set>
+
+  <set name="Living Dead Series">
+    <movie name="Night of the Living Dead" year="1968" rename="Living Dead I: Night of the Living Dead" sort="Living Dead 001"/>
+    <movie name="Dawn of the Dead" year="1978" rename="Living Dead II: Dawn of the Dead" sort="Living Dead 002" />
+    <movie name="Day of the Dead" year="1985" rename="Living Dead III: Day of the Dead" sort="Living Dead 003" />
+    <movie name="Land of the Dead" year="2005" rename="Living Dead IV: Land of the Dead" sort="Living Dead 004" />
+    <movie name="Diary of the Dead" year="2007" rename="Living Dead V: Diary of the Dead" sort="Living Dead 005" />
+    <movie name="Survival of the Dead" year="2010" rename="Living Dead VI: Survival of the Dead" sort="Living Dead 006" />
+
+    <movie name="Night of the Living Dead" year="1990" sort="Living Dead 100" rename="Living Dead Remake I: Night of the Living Dead" />
+    <movie name="Dawn of the Dead" year="2004" sort="Living Dead 101" rename="Living Dead Remake II: Dawn of the Dead" />
+    <movie name="Day of the Dead" year="2008" sort="Living Dead 102" rename="Living Dead Remake III: Day of the Dead" />
+  </set>
+
+  <set name="Return of the Living Dead">
+    <movie name="The Return of the Living Dead" year="1985" rename="Return of the Living Dead I" />
+    <movie name="Return of the Living Dead Part II" year="1988" rename="Return of the Living Dead II" />
+    <movie name="Return of the Living Dead 3" reanme="Return of the Living Dead III" />
+    <movie name="Return of the Living Dead: Necropolis" rename="Return of the Living Dead IV: Necropolis" />
+    <movie name="Return of the Living Dead: Rave to the Grave" rename="Return of the Living Dead V: Rave to the Grave" />
+    <movie name="Children of the Living Dead" rename="Return of the Living Dead VI: Children of the Living Dead" />
+  </set>
+
+  <set name="Dirty Harry">
+    <movie name="Dirty Harry" year="1971" rename="Dirty Harry I" sort="Dirty Harry 001" />
+    <movie name="Magnum Force" year="1973" rename="Dirty Harry II: Magnum Force" sort="Dirty Harry 002" />
+    <movie name="The Enforcer" year="1976" rename="Dirty Harry III: The Enforcer" sort="Dirty Harry 003" />
+    <movie name="Sudden Impact" year="1983" rename="Dirty Harry IV: Sudden Impact" sort="Dirty Harry 004" />
+    <movie name="The Dead Pool" year="1988" rename="Dirty Harry V: The Dead Pool" sort="Dirty Harry 005" />
+  </set>
+
+  <set name="James Bond">
+    <movie name="Dr. No" year="1962" rename="James Bond I: Dr. No" sort="James Bond 001" />
+    <movie name="From Russia with Love" rename="James Bond II: From Russia with Love" sort="James Bond 002" />
+    <movie name="Goldfinger " rename="James Bond III: Goldfinger" sort="James Bond 003" />
+    <movie name="Thunderball " rename="James Bond IV: Thunderball" sort="James Bond 004" />
+    <movie name="You Only Live Twice" rename="James Bond V: You Only Live Twice" sort="James Bond 005" />
+    <movie name="On Her Majesty's Secret Service" rename="James Bond VI: On Her Majesty's Secret Service" sort="James Bond 006" />
+    <movie name="Diamonds Are Forever" rename="James Bond VII: Diamonds Are Forever" sort="James Bond 007" />
+    <movie name="Live and Let Die" rename="James Bond VIII: Live and Let Die" sort="James Bond 008" />
+    <movie name="The Man with the Golden Gun" rename="James Bond IX: The Man with the Golden Gun" sort="James Bond 009" />
+    <movie name="The Spy Who Loved Me" rename="James Bond X: The Spy Who Loved Me" sort="James Bond 010" />
+    <movie name="Moonraker" rename="James Bond XI: Moonraker" sort="James Bond 011" />
+    <movie name="For Your Eyes Only" rename="James Bond XII: For Your Eyes Only" sort="James Bond 012" />
+    <movie name="Octopussy" rename="James Bond XIII: Octopussy" sort="James Bond 013" />
+    <movie name="Never Say Never Again" rename="James Bond XIV: Never Say Never Again" sort="James Bond 014" />
+    <movie name="A View to a Kill" rename="James Bond XV: A View to a Kill" sort="James Bond 015" />
+    <movie name="The Living Daylights" rename="James Bond XVI: The Living Daylights" sort="James Bond 016" />
+    <movie name="Licence to Kill" rename="James Bond XVII: Licence to Kill" sort="James Bond 017" />
+    <movie name="GoldenEye" rename="James Bond XVIII: GoldenEye" sort="James Bond 018" />
+    <movie name="Tomorrow Never Dies" rename="James Bond XIX: Tomorrow Never Dies" sort="James Bond 019" />
+    <movie name="The World Is Not Enough" rename="James Bond XX: The World Is Not Enough" sort="James Bond 020" />
+    <movie name="Die Another Day" rename="James Bond XXI: Die Another Day" sort="James Bond 021" />
+    <movie name="Casino Royale" year="2006" rename="James Bond XXII: Casino Royale" sort="James Bond 022" />
+    <movie name="Quantum of Solace" rename="James Bond XXIII: Quantum of Solace" sort="James Bond 023" />
+    <movie name="Skyfall" year="2012" rename="James Bond XXIV: Skyfall" sort="James Bond 024" />
+  </set>
+
+  <set name="Fantastic Four">
+    <movie name="Fantastic Four" year="2005" rename="Fantastic Four I" />
+    <movie name="Fantastic 4: Rise of the Silver Surfer" rename="Fantastic Four II: Rise of the Silver Surfer" />
+    <movie name="Fantastic Four: Rise of the Silver Surfer" rename="Fantastic Four II: Rise of the Silver Surfer" />
+  </set>
+
+  <set name="Friday the 13th">
+    <movie name="Friday the 13th" year="1980" rename="Friday the 13th I" sort="Friday the 13th 001" />
+    <movie name="Friday the 13th Part 2" year="1981" rename="Friday the 13th II" sort="Friday the 13th 002" />
+    <movie name="Friday the 13th Part III" rename="Friday the 13th III" sort="Friday the 13th 003" />
+    <movie name="Friday the 13th Part 3" rename="Friday the 13th III" sort="Friday the 13th 003" />
+    <movie name="Friday the 13th: The Final Chapter" rename="Friday the 13th IV: The Final Chapter" sort="Friday the 13th 004" />
+    <movie name="Friday the 13th Part 4: The Final Chapter" rename="Friday the 13th IV: The Final Chapter" sort="Friday the 13th 004" />
+    <movie name="Friday the 13th: A New Beginning" rename="Friday the 13th V: A New Beginning" sort="Friday the 13th 005" />
+    <movie name="Friday the 13th Part 5: A New Beginning" rename="Friday the 13th V: A New Beginning" sort="Friday the 13th 005" />
+    <movie name="Jason Lives: Friday the 13th Part VI" rename="Friday the 13th VI: Jason Lives" sort="Friday the 13th 006" />
+    <movie name="Friday the 13th Part 6: Jason Lives" rename="Friday the 13th VI: Jason Lives" sort="Friday the 13th 006" />
+    <movie name="Friday the 13th Part VII: The New Blood" rename="Friday the 13th VII: The New Blood" sort="Friday the 13th 007" />
+    <movie name="Friday the 13th Part 7: The New Blood" rename="Friday the 13th VII: The New Blood" sort="Friday the 13th 007" />
+    <movie name="Friday the 13th Part VIII: Jason Takes Manhattan" rename="Friday the 13th VIII: Jason Takes Manhattan" sort="Friday the 13th 008" />
+    <movie name="Friday the 13th Part 8: Jason Takes Manhattan" rename="Friday the 13th VIII: Jason Takes Manhattan" sort="Friday the 13th 008" />
+    <movie name="Jason Goes to Hell: The Final Friday" rename="Friday the 13th IX: Jason Goes to Hell" sort="Friday the 13th 009" />
+    <movie name="Friday the 13th Part 9: Jason Goes to Hell" rename="Friday the 13th IX: Jason Goes to Hell" sort="Friday the 13th 009" />
+    <movie name="Jason X" rename="Friday the 13th X: Jason X" sort="Friday the 13th 010" />
+    <movie name="Friday the 13th Part 10: Jason X" rename="Friday the 13th X: Jason X" sort="Friday the 13th 010" />
+    <movie name="Friday the 13th" year="2009" rename="Friday the 13th XI: Friday the 13th (Remake)" sort="Friday the 13th 011" />
+  </set>
+
+  <set name="Grease">
+    <movie name="Grease" />
+    <movie name="Grease 2" />
+  </set>
+
+  <set name="Green Lantern Animated">
+    <movie name="Green Lantern: First Flight" rename="Green Lantern Animated I: First Flight" sort="Green Lantern Animated 001" />
+    <movie name="Green Lantern: Emerald Knights" rename="Green Lantern Animated II: Emerald Knights" sort="Green Lantern Animated 002" />
+  </set>
+
+  <set name="Green Lantern">
+    <movie name="Green Lantern" year="2011" rename="Green Lantern I" />
+  </set>
+
+  <set name="Hulk Vs.">
+    <movie name="Hulk vs. Thor" />
+    <movie name="Hulk vs. Wolverine" />
+  </set>
+
+  <set name="Iron Man">
+    <movie name="Iron Man" year="2008" rename="Iron Man I" />
+    <movie name="Iron Man 2" year="2010" rename="Iron Man II" />
+    <movie name="Iron Man 3" year="2013" rename="Iron Man III" />
+  </set>
+
+  <set name="Justice League">
+    <movie name="Justice League: The New Frontier" rename="Justice League I: The New Frontier" />
+    <movie name="Justice League: Crisis on Two Earths" rename="Justice League II: Crisis on Two Earths" />
+    <movie name="Justice League: Doom" rename="Justice League III: Doom" />
+  </set>
+
+  <set name="Alien">
+    <movie name="Alien" rename="Alien I" sort="Alien 001" />
+    <movie name="Aliens" rename="Alien II: Aliens" sort="Alien 002" />
+    <movie name="Alien 3" rename="Alien III" sort="Alien 003" />
+    <movie name="Alien Resurrection"  rename="Alien IV: Alien Resurrection" sort="Alien 004" />
+    <movie name="AVP: Alien vs. Predator" reanme="Alien V: Alien vs. Predator" sort="Alien 005" />
+    <movie name="AVPR: Aliens vs Predator - Requiem" reanme="Alien VI: Alien vs. Predator - Requiem" sort="Alien 006" />
+  </set>
+
+  <set name="Predator">
+    <movie name="Predator" year="1987" rename="Predator I" />
+    <movie name="Predator 2" year="1990" rename="Predator II" />
+    <movie name="Predators" year="2010" rename="Predator III: Predators" />
+  </set>
+
+  <set name="Resident Evil">
+    <movie name="Resident Evil" rename="Resident Evil I" sort="Resident Evil 001" />
+    <movie name="Resident Evil: Apocalypse" rename="Resident Evil II: Apocalypse" sort="Resident Evil 002" />
+    <movie name="Resident Evil: Extinction" rename="Resident Evil III: Extinction" sort="Resident Evil 003" />
+    <movie name="Resident Evil: Afterlife" rename="Resident Evil IV: Afterlife" sort="Resident Evil 004" />
+    <movie name="Resident Evil: Retribution" rename="Resident Evil V: Retribution" sort="Resident Evil 005" />
+
+    <movie name="Biohazard: Degeneration" rename="Resident Evil: Degeneration" sort="Resident Evil 100" />
+  </set>
+
+  <set name="Saw">
+    <movie name="Saw" year="2004" rename="Saw I" />
+    <movie name="Saw II" />
+    <movie name="Saw III" />
+    <movie name="Saw IV" />
+    <movie name="Saw V" />
+    <movie name="Saw VI" />
+    <movie name="Saw 3D: The Final Chapter" rename="Saw VII: The Final Chapter" />
+  </set>
+
+  <set name="Star Trek">
+    <movie name="Star Trek: The Motion Picture" rename="Star Trek I: The Motion Picture" sort="Star Trek 001" />
+    <movie name="Star Trek II: The Wrath of Khan" rename="Star Trek II: The Wrath of Khan" sort="Star Trek 002" />
+    <movie name="Star Trek III: The Search for Spock" rename="Star Trek III: The Search for Spock" sort="Star Trek 003" />
+    <movie name="Star Trek IV: The Voyage Home" rename="Star Trek IV: The Voyage Home" sort="Star Trek 004" />
+    <movie name="Star Trek V: The Final Frontier" rename="Star Trek V: The Final Frontier" sort="Star Trek 005" />
+    <movie name="Star Trek VI: The Undiscovered Country" rename="Star Trek VI: The Undiscovered Country" sort="Star Trek 006" />
+    <movie name="Star Trek: Generations" rename="Star Trek VII: Generations" sort="Star Trek 007" />
+    <movie name="Star Trek VII: Generations" rename="Star Trek VII: Generations" sort="Star Trek 007" />
+    <movie name="Star Trek: First Contact" rename="Star Trek VIII: First Contact" sort="Star Trek 008" />
+    <movie name="Star Trek VIII: First Contact" rename="Star Trek VIII: First Contact" sort="Star Trek 008" />
+    <movie name="Star Trek: Insurrection" rename="Star Trek IX: Insurrection" sort="Star Trek 009" />
+    <movie name="Star Trek IX: Insurrection" rename="Star Trek IX: Insurrection" sort="Star Trek 009" />
+    <movie name="Star Trek: Nemesis" rename="Star Trek X: Nemesis" sort="Star Trek 010" />
+    <movie name="Star Trek X: Nemesis" rename="Star Trek X: Nemesis" sort="Star Trek 010" />
+    <movie name="Star Trek" year="2009" rename="Star Trek XI: Star Trek" sort="Star Trek 011" />
+    <movie name="Star Trek XI" year="2009" rename="Star Trek XI: Star Trek" sort="Star Trek 011" />
+  </set>
+
+  <set name="Stargate">
+    <movie name="Stargate" year="1994" rename="Stargate I" sort="Stargate 001" />
+    <movie name="Stargate: The Ark of Truth" rename="Stargate II: The Ark of Truth" sort="Stargate 002" />
+    <movie name="Stargate: Continuum" rename="Stargate III: Continuum" sort="Stargate 003" />
+  </set>
+
+  <set name="Superman">
+    <movie name="Superman" year="1978" rename="Superman I" sort="Superman 010" />
+    <movie name="Superman II" year="1980" rename="Superman II" sort="Superman 020" />
+    <movie name="Superman II The Richard Donner Cut" year="2006" rename="Superman II [The Richard Donner Cut]" sort="Superman 021" />
+    <movie name="Superman II - The Richard Donner Cut" year="2006" rename="Superman II [The Richard Donner Cut]" sort="Superman 021" />
+    <movie name="Superman II: The Richard Donner Cut" year="2006" rename="Superman II [The Richard Donner Cut]" sort="Superman 021" />
+    <movie name="Superman III" year="1983" rename="Superman III" sort="Superman 030" />
+    <movie name="Superman IV: The Quest for Peace" rename="Superman IV: The Quest for Peace" sort="Superman 040" />
+    <movie name="Superman Returns" rename="Superman V: Superman Returns" sort="Superman 050" />
+    <movie name="Man of Steel" year="2013" rename="Superman VI: Man of Steel" sort="Superman 060" />
+    <movie name="Supergirl" year="1984" sort="Superman 500" />
+    <movie name="Supergirl: The Making of the Movie" year="1984" sort="Superman 600" />
+  </set>
+
+  <set name="Superman Animated">
+    <movie name="Superman: Doomsday" rename="Superman Animated I: Doomsday" sort="Superman Animated 001" />
+    <movie name="All-Star Superman " rename="Superman Animated II: All-Star Superman" sort="Superman Animated 002" />
+  </set>
+
+  <set name="Teenage Mutant Ninja Turtles">
+    <movie name="Teenage Mutant Ninja Turtles" year="1990" rename="Teenage Mutant Ninja Turtles I" />
+    <movie name="Teenage Mutant Ninja Turtles II: The Secret of the Ooze" year="1991" rename="Teenage Mutant Ninja Turtles II: The Secret of the Ooze " />
+    <movie name="Teenage Mutant Ninja Turtles III" year="1993" rename="Teenage Mutant Ninja Turtles III" />
+    <movie name="TMNT" year="2007" rename="Teenage Mutant Ninja Turtles IV: TMNT" />
+  </set>
+
+  <set name="The Hustler">
+    <movie name="The Hustler" year="1961" />
+    <movie name="The Color of Money" year="1986" rename="The Hustler II: The Color of Money" />
+  </set>
+
+  <set name="The Fly">
+    <movie name="The Fly" year="1986" />
+    <movie name="The Fly II" year="1989" rename="The Fly II" />
+    <movie name="The Fly: 2" year="1989" rename="The Fly II" />
+  </set>
+
+  <set name="The Librarian">
+    <movie name="The Librarian: Quest for the Spear" rename="The Librarian I: Quest for the Spear" />
+    <movie name="The Librarian: Return to King Solomon's Mines" rename="The Librarian II: Return to King Solomon's Mines" />
+    <movie name="The Librarian: The Curse of the Judas Chalice" rename="The Librarian III: The Curse of the Judas Chalice" />
+  </set>
+
+  <set name="The Santa Clause">
+    <movie name="The Santa Clause" rename="The Santa Clause I" />
+    <movie name="The Santa Clause 2" rename="The Santa Clause II" />
+    <movie name="The Santa Clause 3: The Escape Clause" rename="The Santa Clause III: The Escape Clause" />
+  </set>
+
+  <set name="TRON">
+    <movie name="TRON" rename="TRON I" />
+    <movie name="TRON: Legacy" rename="TRON II: Legacy" />
+  </set>
+
+  <set name="Ultimate Avengers">
+    <movie name="Ultimate Avengers" rename="Ultimate Avengers I" />
+    <movie name="Ultimate Avengers II" rename="Ultimate Avengers II" />
+  </set>
+
+  <set name="X-Men">
+    <movie name="X-Men" year="2000" rename="X-Men I" />
+    <movie name="X2" year="2003" rename="X-Men II: X-Men United" />
+    <movie name="X2: X-Men United" rename="X-Men II: X-Men United" />
+    <movie name="X-Men: The Last Stand" rename="X-Men III: The Last Stand" />
+    <movie name="X-Men Origins: Wolverine" rename="X-Men IV: Wolverine" />
+    <movie name="X-Men: First Class" rename="X-Men V: First Class" />
+  </set>
+
+  <set name="Ocean's Eleven">
+    <movie name="Ocean's Eleven" year="1960" rename="Ocean's Eleven" sort="Ocean's 10" />
+    <movie name="Ocean's Eleven" year="2001" rename="Ocean's Eleven (Remake)" sort="Ocean's 11" />
+    <movie name="Ocean's Twelve" rename="Ocean's Twelve" sort="Ocean's 12" />
+    <movie name="Ocean's Thirteen" rename="Ocean's Thirteen" sort="Ocean's 13" />
+  </set>
+
+  <set name="The Fox and the Hound">
+    <movie name="The Fox and the Hound" />
+    <movie name="The Fox and the Hound 2" rename="The Fox and the Hound II" />
+  </set>
+
+  <set name="Captain America">
+    <movie name="Captain America" year="1990" sort="Captain America 000" />
+    <movie name="Captain America: The First Avenger" rename="Captain America I: The First Avenger" sort="Captain America 001" />
+  </set>
+
+  <set name="The Punisher">
+    <movie name="The Punisher" year="1989" rename="The Punisher I" sort="The Punisher 001" />
+    <movie name="The Punisher" year="2004" rename="The Punisher II (Remake)" sort="The Punisher 002" />
+    <movie name="Punisher: War Zone" year="2008" rename="The Punisher III: War Zone" sort="The Punisher 003" />
+  </set>
+
+  <set name="Young Guns">
+    <movie name="Young Guns" year="1988" rename="Young Guns I" />
+    <movie name="Young Guns II" year="1990" rename="Young Guns II" />
+    <movie name="Young Guns 2 " year="1990" rename="Young Guns II" />
+  </set>
+
+  <set name="Bring It On">
+    <movie name="Bring It On" year="2000" rename="Bring It On I" />
+    <movie name="Bring It On Again" year="2004" rename="Bring It On II: Bring It On Again" />
+    <movie name="Bring It On: All or Nothing" year="2006" rename="Bring It On III: All Or Nothing" />
+    <movie name="Bring It On: In It To Win It" year="2007" rename="Bring It On IV: In It To Win It" />
+    <movie name="Bring It On: Fight to the Finish" year="2009" rename="Bring It On V: Fight to the Finish" />
+  </set>
+
+  <set name="Millennium Trilogy [Swedish]">
+    <movie name="The Girl with the Dragon Tattoo" year="2009" rename="Millennium I: The Girl with the Dragon Tattoo" />
+    <movie name="The Girl Who Played with Fire" year="2009" rename="Millennium II: The Girl Who Played with Fire" />
+    <movie name="The Girl Who Kicked the Hornet's Nest" year="2009" rename="Millennium III: The Girl Who Kicked the Hornet's Nest" />
+  </set>
+
+  <set name="Jurassic Park">
+    <movie name="Jurassic Park" year="1993" rename="Jurassic Park I" />
+    <movie name="The Lost World: Jurassic Park" year="1997" rename="Jurassic Park II: The Lost World" />
+    <movie name="Jurassic Park III" year="2001" rename="Jurassic Park III" />
+  </set>
+
+  <set name="Omen">
+    <movie name="The Omen" year="1976" rename="Omen I" />
+    <movie name="Damien: Omen II" year="1978" rename="Omen II: Damien" />
+    <movie name="Omen III: The Final Conflict" year="1981" rename="Omen III: The Final Conflict" />
+    <movie name="Omen IV: The Awakening" year="1991" rename="Omen IV: The Awakening" />
+    <movie name="The Omen" year="2006" rename="Omen V: Remake" />
+  </set>
+
+  <set name="The NeverEnding Story">
+    <movie name="The NeverEnding Story" year="1984" rename="The NeverEnding Story I" />
+    <movie name="The NeverEnding Story II: The Next Chapter " year="1990" rename="The NeverEnding Story II: The Next Chapter" />
+    <movie name="Neverending Story III: Return to Fantasia" rename="The Neverending Story III: Return to Fantasia" />
+    <movie name="The Neverending Story III: Escape from Fantasia" rename="The Neverending Story III: Escape from Fantasia" />
+    <movie name="The Neverending Story III" rename="The Neverending Story III: Return to Fantasia" />
+  </set>
+
+  <set name="Citizen Kane">
+    <movie name="Citizen Kane" />
+    <movie name="The Battle over Citizen Kane" />
+  </set>
+
+  <set name="Bambi">
+    <movie name="Bambi" rename="Bambi I" />
+    <movie name="Bambi II" />
+  </set>
+  
+  <set name="The Jungle Book">
+    <movie name="The Jungle Book" year="1967" rename="The Jungle Book I" />
+    <movie name="The Jungle Book 2" year="2003" rename="The Jungle Book II" />
+  </set>
+
+  <set name="American Psycho">
+    <movie name="American Psycho" year="2000" />
+    <movie name="American Psycho 2: All American Girl" year="2002" rename="American Psycho II: All American Girl" />
+  </set>
+
+  <set name="Cats and Dogs">
+    <movie name="Cats &amp; Dogs" rename="Cats and Dogs" year="2001"/>
+    <movie name="Cats and Dogs - The Revenge of Kitty Galore" rename="Cats and Dogs II: The Revenge of Kitty Galore" />
+  </set>
+
+  <set name="Clerks">
+    <movie name="Clerks" year="1994" />
+    <movie name="Clerks II" year="2006" />
+  </set>
+
+  <set name="Ghostbusters">
+    <movie name="Ghostbusters" year="1984" rename="Ghostbusters I" />
+    <movie name="Ghostbusters II" year="1989" rename="Ghostbusters II" />
+    <movie name="Ghostbusters III" rename="Ghostbusters III" />
+  </set>
+
+  <set name="The Godfather">
+    <movie name="The Godfather" rename="The Godfather: Part I" />
+    <movie name="The Godfather: Part II" />
+    <movie name="The Godfather: Part III" />
+  </set>
+
+  <set name="The Karate Kid">
+    <movie name="The Karate Kid" year="1984" rename="The Karate Kid Part I" sort="The Karate Kid Part 001" />
+    <movie name="The Karate Kid, Part II" year="1986" rename="The Karate Kid Part II" sort="The Karate Kid Part 002" />
+    <movie name="The Karate Kid, Part III" year="1989" rename="The Karate Kid Part III" sort="The Karate Kid Part 003" />
+    <movie name="The Next Karate Kid" year="1994" rename="The Karate Kid Part IV: The Next Karate Kid" sort="The Karate Kid Part 004" />
+    <movie name="The Karate Kid" year="2010" rename="The Karate Kid (Remake)" sort="The Karate Kid Part 005" />
+  </set>
+
+  <set name="Alvin and the Chipmunks" match="^Alvin and the Chipmunks">
+    <movie name="Alvin and the Chipmunks" year="2007" rename="Alvin and the Chipmunks I" />
+    <movie name="Alvin and the Chipmunks: The Squeakquel" year="2009" rename="Alvin and the Chipmunks II: The Squeakquel" />
+    <movie name="Alvin and the Chipmunks: Chipwrecked " year="2011" rename="Alvin and the Chipmunks III: Chipwrecked " />
+  </set>
+
+  <set name="Open Season">
+    <movie name="Open Season" year="2006" rename="Open Season I" />
+    <movie name="Open Season 2" year="2008" rename="Open Season II" />
+    <movie name="Open Season 3" year="2010" rename="Open Season III" />
+  </set>
+	
+  <set name="Kill Bill" match="^Kill Bill Vol" />
+	
+  <set name="Hot Shots!">
+	<movie name="Hot Shots!" year="1991" sort="Hot Shots 001" />
+	<movie name="Hot Shots! Part Deux" year="1993" sort="Hot Shots 002" />
+  </set>
+	
+  <set name="Blade">
+	<movie name="Blade" year="1998" rename="Blade I" />
+	<movie name="Blade II" year="2002" rename="Blade II" />
+	<movie name="Blade: Trinity" year="2004" rename="Blade III: Trinity" />
+  </set>
+	
+  <set name="Airplane!">
+	<movie name="Airplane!" year="1980" rename="Airplane I" />
+	<movie name="Airplane II: The Sequel" year="1982" />
+  </set>
+</movies>

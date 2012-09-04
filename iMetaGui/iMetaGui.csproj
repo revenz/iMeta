@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A7EAA33-F219-400C-B81F-1C8FF6163EE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iMetaGui</RootNamespace>
+    <AssemblyName>iMeta</AssemblyName>
+    <ApplicationIcon>..\iMeta\iMeta.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Mono.Posix" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Mono.Cairo" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\noposter.png" />
+    <EmbeddedResource Include="Images\noposter_small.png" />
+    <EmbeddedResource Include="Images\iMeta.ico">
+      <DeployService-UseProjectRelativePath>true</DeployService-UseProjectRelativePath>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\stars_00.png" />
+    <EmbeddedResource Include="Images\stars_05.png" />
+    <EmbeddedResource Include="Images\stars_10.png" />
+    <EmbeddedResource Include="Images\stars_15.png" />
+    <EmbeddedResource Include="Images\stars_20.png" />
+    <EmbeddedResource Include="Images\stars_25.png" />
+    <EmbeddedResource Include="Images\stars_30.png" />
+    <EmbeddedResource Include="Images\stars_35.png" />
+    <EmbeddedResource Include="Images\stars_40.png" />
+    <EmbeddedResource Include="Images\stars_45.png" />
+    <EmbeddedResource Include="Images\stars_50.png" />
+    <EmbeddedResource Include="Images\red.png" />
+    <EmbeddedResource Include="Images\orange.png" />
+    <EmbeddedResource Include="Images\loading.png" />
+    <EmbeddedResource Include="Images\green.png" />
+    <EmbeddedResource Include="Images\star.png" />
+    <EmbeddedResource Include="Images\starempty.png" />
+    <EmbeddedResource Include="Images\star32.png" />
+    <EmbeddedResource Include="Images\starempty32.png" />
+    <EmbeddedResource Include="Images\starhalf32.png" />
+    <EmbeddedResource Include="Images\tvsettings.png" />
+    <EmbeddedResource Include="Images\generalsettings.png" />
+    <EmbeddedResource Include="Images\moviesettings.png" />
+    <EmbeddedResource Include="Resources\jquery-1.7.1.min.js" />
+    <EmbeddedResource Include="Resources\ExportTemplate.html" />
+    <EmbeddedResource Include="Images\topbarbackground.png" />
+    <EmbeddedResource Include="Images\ibuttonleft.png" />
+    <EmbeddedResource Include="Images\ibuttonleft_pushed.png" />
+    <EmbeddedResource Include="Images\ibuttonright.png" />
+    <EmbeddedResource Include="Images\closebackground.png" />
+    <EmbeddedResource Include="Images\windows_closebutton.png" />
+    <EmbeddedResource Include="Images\windows_closebutton_hover.png" />
+    <EmbeddedResource Include="Images\windows_closebutton_inactive.png" />
+    <EmbeddedResource Include="Images\windows_maximizebutton.png" />
+    <EmbeddedResource Include="Images\windows_minimizebutton.png" />
+    <EmbeddedResource Include="Images\ibuttonright_pushed.png" />
+    <EmbeddedResource Include="Images\windows_maximizebutton_hover.png" />
+    <EmbeddedResource Include="Images\windows_minimizebutton_hover.png" />
+    <EmbeddedResource Include="Images\button_folders.png" />
+    <EmbeddedResource Include="Images\button_preferences.png" />
+    <EmbeddedResource Include="Images\button_refresh.png" />
+    <EmbeddedResource Include="Images\button_scan.png" />
+    <EmbeddedResource Include="Images\button_preferences_pushed.png" />
+    <EmbeddedResource Include="Images\button_refresh_pushed.png" />
+    <EmbeddedResource Include="Images\button_scan_pushed.png" />
+    <EmbeddedResource Include="Images\button_export.png" />
+    <EmbeddedResource Include="Images\button_export_pushed.png" />
+    <EmbeddedResource Include="Images\statuswidget_background.png" />
+    <EmbeddedResource Include="Images\statuswidget_left.png" />
+    <EmbeddedResource Include="Images\statuswidget_right.png" />
+    <EmbeddedResource Include="Images\mac_closebutton.png" />
+    <EmbeddedResource Include="Images\mac_closebutton_hover.png" />
+    <EmbeddedResource Include="Images\mac_maximizebutton.png" />
+    <EmbeddedResource Include="Images\mac_maximizebutton_hover.png" />
+    <EmbeddedResource Include="Images\mac_minimizebutton.png" />
+    <EmbeddedResource Include="Images\mac_minimizebutton_hover.png" />
+    <EmbeddedResource Include="Images\leftpanebackground.png" />
+    <EmbeddedResource Include="Images\dialogbackground.png" />
+    <EmbeddedResource Include="Images\advanced.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="GuiComponents\MetaNodeItem.cs" />
+    <Compile Include="GuiHelper.cs" />
+    <Compile Include="TvShowGui.cs" />
+    <Compile Include="gtk-gui\iMetaGui.TvShowGui.cs" />
+    <Compile Include="GuiComponents\TvEpisodeNodeItem.cs" />
+    <Compile Include="Images.cs" />
+    <Compile Include="TvShowListGui.cs" />
+    <Compile Include="gtk-gui\iMetaGui.TvShowListGui.cs" />
+    <Compile Include="FolderListGui.cs" />
+    <Compile Include="gtk-gui\iMetaGui.FolderListGui.cs" />
+    <Compile Include="EpisodesEditorGui.cs" />
+    <Compile Include="gtk-gui\iMetaGui.EpisodesEditorGui.cs" />
+    <Compile Include="EpisodeEditorGui.cs" />
+    <Compile Include="gtk-gui\iMetaGui.EpisodeEditorGui.cs" />
+    <Compile Include="RatingWidget.cs" />
+    <Compile Include="gtk-gui\iMetaGui.RatingWidget.cs" />
+    <Compile Include="MovieListGui.cs" />
+    <Compile Include="gtk-gui\iMetaGui.MovieListGui.cs" />
+    <Compile Include="PlatformDetection.cs" />
+    <Compile Include="gtk-gui\iMetaGui.MainWindow.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="GuiComponents\KeyNode.cs" />
+    <Compile Include="GuiComponents\TreeItemCellRenderer.cs" />
+    <Compile Include="PreferencesDialog.cs" />
+    <Compile Include="gtk-gui\iMetaGui.PreferencesDialog.cs" />
+    <Compile Include="GuiComponents\TvShowNode.cs" />
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="ResourceReader.cs" />
+    <Compile Include="ExportingDialog.cs" />
+    <Compile Include="gtk-gui\iMetaGui.ExportingDialog.cs" />
+    <Compile Include="MovieEditor.cs" />
+    <Compile Include="gtk-gui\iMetaGui.MovieEditor.cs" />
+    <Compile Include="GuiComponents\ActorNode.cs" />
+    <Compile Include="iButton.cs" />
+    <Compile Include="gtk-gui\iMetaGui.iButton.cs" />
+    <Compile Include="WindowsButtons.cs" />
+    <Compile Include="gtk-gui\iMetaGui.WindowsButtons.cs" />
+    <Compile Include="MenuButton.cs" />
+    <Compile Include="gtk-gui\iMetaGui.MenuButton.cs" />
+    <Compile Include="TopBar.cs" />
+    <Compile Include="gtk-gui\iMetaGui.TopBar.cs" />
+    <Compile Include="StatusWidget.cs" />
+    <Compile Include="gtk-gui\iMetaGui.StatusWidget.cs" />
+    <Compile Include="MacButtons.cs" />
+    <Compile Include="gtk-gui\iMetaGui.MacButtons.cs" />
+    <Compile Include="GuiComponents\StringNode.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\iMetaLibrary\iMetaLibrary.csproj">
+      <Project>{D72DC2B1-79E7-4704-B76E-25C609066FD3}</Project>
+      <Name>iMetaLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MovieRenames.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

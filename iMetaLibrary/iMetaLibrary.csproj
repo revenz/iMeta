@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D72DC2B1-79E7-4704-B76E-25C609066FD3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iMetaLibrary</RootNamespace>
+    <AssemblyName>iMetaLibrary</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Metadata\Meta.cs" />
+    <Compile Include="Metadata\MovieMeta.cs" />
+    <Compile Include="Metadata\TvEpisodeMeta.cs" />
+    <Compile Include="Metadata\TvFileMeta.cs" />
+    <Compile Include="Metadata\TvShowMeta.cs" />
+    <Compile Include="Scanners\MovieScanner.cs" />
+    <Compile Include="Scanners\Scanner.cs" />
+    <Compile Include="Scanners\TvScanner.cs" />
+    <Compile Include="Metadata\VideoMeta.cs" />
+    <Compile Include="Metadata\VideoFileMeta.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
+    <Compile Include="Helpers\MediaInfoDLL.cs" />
+    <Compile Include="Helpers\NfoLoader.cs" />
+    <Compile Include="Helpers\ObjectCopier.cs" />
+    <Compile Include="Helpers\ResourceReader.cs" />
+    <Compile Include="Helpers\WebHelper.cs" />
+    <Compile Include="Helpers\YouTubeDownloader.cs" />
+    <Compile Include="Helpers\ImageDownloader.cs" />
+    <Compile Include="Helpers\MovieRenamer.cs" />
+    <Compile Include="Helpers\UtilityHelper.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="ImageResizer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\TheMovieDb\TheMovieDb.csproj">
+      <Project>{E6A361F4-D859-4BF2-AEF7-15E711505ED4}</Project>
+      <Name>TheMovieDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TvdbLib\TvdbLib.csproj">
+      <Project>{23C34CF0-4E66-4F02-9EDC-83F292C6005C}</Project>
+      <Name>TvdbLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

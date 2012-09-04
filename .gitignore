@@ -1,0 +1,10 @@
+
+*.userprefs
+/iMetaGui/bin
+/iMetaGui/obj
+/iMetaLibrary/bin
+/iMetaLibrary/obj
+/TheMovieDb/bin
+/TheMovieDb/obj
+/TvdbLib/obj
+/TvdbLib/bin
