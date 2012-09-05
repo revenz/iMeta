@@ -77,12 +77,61 @@ namespace iMetaGui
 			
 			Poster = GuiHelper.ImageToPixbuf(Meta.LoadThumbnail(290, 1000));
 			
-			ratingwidget.Visible  = false;
+			//ratingwidget.Visible  = false;
 			
 			buttonOk.Clicked += delegate {
 				Save ();
 			};
-			
+
+			eventPoster.ButtonPressEvent +=	delegate{
+				BrowseForNewPoster();
+			};
+		}
+
+		void BrowseForNewPoster ()
+		{
+            using (Gtk.FileChooserDialog fc = new Gtk.FileChooserDialog("Choose a new Poster.",
+                                                                        this,
+                                                                        FileChooserAction.Open,
+                                                                        "Cancel", ResponseType.Cancel,
+                                                                        "Open", ResponseType.Accept))
+            {
+                fc.LocalOnly = false;
+				FileFilter filter = new FileFilter();
+				filter.Name = "Images";
+				filter.AddMimeType("image/png");
+				filter.AddMimeType("image/jpeg");
+				filter.AddMimeType("image/gif");
+				filter.AddPattern("*.png");
+				filter.AddPattern("*.jpg");
+				filter.AddPattern("*.jpeg");
+				filter.AddPattern("*.jpe");
+				filter.AddPattern("*.gif");
+				filter.AddPattern("*.tbn");
+				fc.AddFilter(filter);
+                if (fc.Run() == (int)ResponseType.Accept)
+                {
+                    try
+                    {
+						// get the new poster
+						string newposter = new System.IO.FileInfo(fc.Filename).FullName;
+						using(System.Drawing.Image poster = System.Drawing.Image.FromFile(newposter))
+						{
+							iMetaLibrary.Helpers.ImageHelper.SavePoster(poster, Meta.PosterFilename);
+							if(Poster != null)
+								Poster.Dispose();
+							Poster = GuiHelper.ImageToPixbuf(poster);
+							ExposeIt();
+						}
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                //Don't forget to call Destroy() or the FileChooserDialog window won't get closed.
+                fc.Destroy();
+            }
 		}
 
 
@@ -116,22 +165,6 @@ namespace iMetaGui
 			Gdk.GC gc = new Gdk.GC(this.GdkWindow);			
 			int w, h;
 			this.GdkWindow.GetSize(out w, out h);
-			/*
-			int posterW, posterH, posterX;
-			if(Poster != null)
-			{
-				posterW = Poster.Width;
-				posterH = Poster.Height;
-            	//Poster.RenderPixmapAndMask(out pixmap, out pixmap_mask, 255); 
-			}
-			else
-			{
-				posterW = Images.NoPosterPixbuf.Width;
-				posterH = Images.NoPosterPixbuf.Height;
-            	//Images.NoPosterPixbuf.RenderPixmapAndMask(out pixmap, out pixmap_mask, 255); 
-			}
-			posterX = (260 - posterW) / 2;
-			*/
 			
 			Gdk.Pixmap pixmap_mask;
 			Pixmap pixmap;	
@@ -151,42 +184,7 @@ namespace iMetaGui
 					cr.Fill();
 				}
 				this.GdkWindow.DrawPixbuf(gc, Poster, 0, 0, posterBounds.X, posterBounds.Y, posterBounds.Width, posterBounds.Height, RgbDither.Normal, 0, 0);
-			}
-			
-			return;
-			
-			using(Cairo.Context cr =  Gdk.CairoHelper.Create(this.GdkWindow))
-			{
-				//cr.SetSourceRGB(.9411, .9411, .9411);
-				cr.SetSourceRGB(1, 1, 1);
-				cr.Rectangle(0, 0, w, h);
-				cr.Fill();
-				/*
-				cr.Rectangle(posterX - 2, 98, posterW + 4, posterH + 4);
-				cr.SetSourceRGB(.7, .7, .7);
-				cr.Fill();
-				cr.Rectangle(258, 0, 1, h);
-				cr.Fill();				
-				*/
-				cr.Rectangle(0, h - 51, w, 1);
-				cr.SetSourceRGB(.5, .5, .5);
-				cr.Fill();
-				cr.Rectangle(0, h - 50, w, 50);
-				cr.SetSourceRGB(255, 255, 255);
-				cr.Fill();
-			}
-			//h - 52
-			int pixbufheight = Images.DialogBackground.Height;
-			int y = 0;
-			while(y < h - 52)
-			{
-				this.GdkWindow.DrawPixbuf(gc, Images.DialogBackground, 0, 0, 0, y, -1, -1,Gdk.RgbDither.Normal, 0, 0);
-				y += pixbufheight;
-			}
-			//this.GdkWindow.DrawPixbuf(gc, Poster ?? Images.NoPosterPixbuf, 0, 0, posterX, 100, posterW, posterH, RgbDither.Normal, 0, 0);
-			
-			//image1.HeightRequest = posterH + 20;
-			
+			}			
 		}
 		
 		public void Save()

@@ -1875,7 +1875,7 @@ Other</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Dialog" id="iMetaGui.PreferencesDialog" design-size="601 538">
+  <widget class="Gtk.Dialog" id="iMetaGui.PreferencesDialog" design-size="603 538">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Preferences</property>
     <property name="Icon">stock:gtk-preferences Menu</property>
@@ -1931,7 +1931,7 @@ Other</property>
               <widget class="Gtk.Notebook" id="notebook1">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
-                <property name="CurrentPage">2</property>
+                <property name="CurrentPage">1</property>
                 <child>
                   <widget class="Gtk.Table" id="table2">
                     <property name="MemberName" />
@@ -3256,7 +3256,7 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
                         <property name="MemberName" />
                         <property name="Spacing">6</property>
                         <child>
-                          <widget class="Gtk.Image" id="image21">
+                          <widget class="Gtk.Image" id="imgTabAdvanced">
                             <property name="MemberName" />
                             <property name="Pixbuf">resource:iMetaGui.Images.advanced.png</property>
                           </widget>
@@ -3304,7 +3304,7 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
                         <property name="MemberName" />
                         <property name="Spacing">6</property>
                         <child>
-                          <widget class="Gtk.Image" id="image14">
+                          <widget class="Gtk.Image" id="imgTabGeneral">
                             <property name="MemberName" />
                             <property name="Pixbuf">resource:iMetaGui.Images.generalsettings.png</property>
                           </widget>
@@ -3352,7 +3352,7 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
                         <property name="MemberName" />
                         <property name="Spacing">6</property>
                         <child>
-                          <widget class="Gtk.Image" id="image15">
+                          <widget class="Gtk.Image" id="imgTabMovies">
                             <property name="MemberName" />
                             <property name="Pixbuf">resource:iMetaGui.Images.moviesettings.png</property>
                           </widget>
@@ -3400,7 +3400,7 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
                         <property name="MemberName" />
                         <property name="Spacing">6</property>
                         <child>
-                          <widget class="Gtk.Image" id="image16">
+                          <widget class="Gtk.Image" id="imgTabTvShows">
                             <property name="MemberName" />
                             <property name="Pixbuf">resource:iMetaGui.Images.tvsettings.png</property>
                           </widget>
@@ -3721,18 +3721,20 @@ Please check disk space and write permissions to export location.</property>
             <child>
               <widget class="Gtk.VBox" id="vbox2">
                 <property name="MemberName" />
+                <property name="HeightRequest">320</property>
                 <property name="Spacing">6</property>
                 <child>
-                  <widget class="Gtk.Image" id="imgPoster">
+                  <widget class="Gtk.EventBox" id="eventPoster">
                     <property name="MemberName" />
-                    <property name="WidthRequest">330</property>
-                    <property name="HeightRequest">470</property>
+                    <property name="HeightRequest">440</property>
+                    <property name="VisibleWindow">False</property>
+                    <child>
+                      <placeholder />
+                    </child>
                   </widget>
                   <packing>
                     <property name="Position">0</property>
-                    <property name="AutoSize">False</property>
-                    <property name="Expand">False</property>
-                    <property name="Fill">False</property>
+                    <property name="AutoSize">True</property>
                   </packing>
                 </child>
                 <child>
@@ -3744,6 +3746,19 @@ Please check disk space and write permissions to export location.</property>
                   </widget>
                   <packing>
                     <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Fixed" id="fixed1">
+                    <property name="MemberName" />
+                    <property name="HeightRequest">30</property>
+                    <property name="HasWindow">False</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">2</property>
                     <property name="AutoSize">True</property>
                     <property name="Expand">False</property>
                     <property name="Fill">False</property>
@@ -4515,8 +4530,6 @@ Please check disk space and write permissions to export location.</property>
           <packing>
             <property name="Position">0</property>
             <property name="AutoSize">True</property>
-            <property name="Expand">False</property>
-            <property name="Fill">False</property>
           </packing>
         </child>
       </widget>

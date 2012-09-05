@@ -10,6 +10,8 @@ namespace iMetaGui
 		
 		public static Gdk.Pixbuf ImageToPixbuf(System.Drawing.Image Image)
 		{
+            if (Image == null)
+                return null;
 			using(System.IO.MemoryStream stream = new System.IO.MemoryStream())
 			{
 				Image.Save(stream, System.Drawing.Imaging.ImageFormat.Bmp);

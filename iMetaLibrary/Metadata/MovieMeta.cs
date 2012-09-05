@@ -100,6 +100,21 @@ namespace iMetaLibrary.Metadata
             CreateNfoFile();
         }
 
+		/// <summary>
+		/// Gets the poster filename.
+		/// </summary>
+		/// <value>
+		/// The poster filename.
+		/// </value>
+		public string PosterFilename 
+		{
+			get 
+			{
+				string filenameNoExtension = this.Filename.Substring(0, this.Filename.LastIndexOf("."));
+				return filenameNoExtension + ".tbn";
+			}
+		}
+
         private void CreateNfoFile()
         {
             XElement movie = new XElement("movie");

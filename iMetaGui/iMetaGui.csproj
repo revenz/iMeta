@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>iMetaGui</RootNamespace>
     <AssemblyName>iMeta</AssemblyName>
-    <ApplicationIcon>..\iMeta\iMeta.ico</ApplicationIcon>
+    <ApplicationIcon>iMeta.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +48,7 @@
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
       <LogicalName>gui.stetic</LogicalName>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\noposter.png" />
     <EmbeddedResource Include="Images\noposter_small.png" />
@@ -113,6 +114,10 @@
     <EmbeddedResource Include="Images\leftpanebackground.png" />
     <EmbeddedResource Include="Images\dialogbackground.png" />
     <EmbeddedResource Include="Images\advanced.png" />
+    <EmbeddedResource Include="Images\moviesettings_inactive.png" />
+    <EmbeddedResource Include="Images\advanced_inactive.png" />
+    <EmbeddedResource Include="Images\generalsettings_inactive.png" />
+    <EmbeddedResource Include="Images\tvsettings_inactive.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FolderBrowserDialogEx.cs">
@@ -181,6 +186,7 @@
     <Content Include="app.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="iMeta.ico" />
     <Content Include="MovieRenames.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -623,7 +623,89 @@ namespace iMetaGui
 			}
 		}
 		#endregion
-		
+
+		#region Preferences tab icons
+		private static Gdk.Pixbuf _TabAdvanced;
+		public static Gdk.Pixbuf TabAdvanced
+		{
+			get
+			{
+				if(_TabAdvanced == null)			
+					_TabAdvanced = new Gdk.Pixbuf(null, "iMetaGui.Images.advanced.png");
+				return _TabAdvanced;
+			}
+		}
+		private static Gdk.Pixbuf _TabAdvancedInactive;
+		public static Gdk.Pixbuf TabAdvancedInactive
+		{
+			get
+			{
+				if(_TabAdvancedInactive == null)			
+					_TabAdvancedInactive = new Gdk.Pixbuf(null, "iMetaGui.Images.advanced_inactive.png");
+				return _TabAdvancedInactive;
+			}
+		}
+		private static Gdk.Pixbuf _TabGeneral;
+		public static Gdk.Pixbuf TabGeneral
+		{
+			get
+			{
+				if(_TabGeneral == null)			
+					_TabGeneral = new Gdk.Pixbuf(null, "iMetaGui.Images.generalsettings.png");
+				return _TabGeneral;
+			}
+		}
+		private static Gdk.Pixbuf _TabGeneralInactive;
+		public static Gdk.Pixbuf TabGeneralInactive
+		{
+			get
+			{
+				if(_TabGeneralInactive == null)			
+					_TabGeneralInactive = new Gdk.Pixbuf(null, "iMetaGui.Images.generalsettings_inactive.png");
+				return _TabGeneralInactive;
+			}
+		}
+		private static Gdk.Pixbuf _TabMovies;
+		public static Gdk.Pixbuf TabMovies
+		{
+			get
+			{
+				if(_TabMovies == null)			
+					_TabMovies = new Gdk.Pixbuf(null, "iMetaGui.Images.moviesettings.png");
+				return _TabMovies;
+			}
+		}
+		private static Gdk.Pixbuf _TabMoviesInactive;
+		public static Gdk.Pixbuf TabMoviesInactive
+		{
+			get
+			{
+				if(_TabMoviesInactive == null)			
+					_TabMoviesInactive = new Gdk.Pixbuf(null, "iMetaGui.Images.moviesettings_inactive.png");
+				return _TabMoviesInactive;
+			}
+		}
+		private static Gdk.Pixbuf _TabTv;
+		public static Gdk.Pixbuf TabTv
+		{
+			get
+			{
+				if(_TabTv == null)			
+					_TabTv = new Gdk.Pixbuf(null, "iMetaGui.Images.tvsettings.png");
+				return _TabTv;
+			}
+		}
+		private static Gdk.Pixbuf _TabTvInactive;
+		public static Gdk.Pixbuf TabTvInactive
+		{
+			get
+			{
+				if(_TabTvInactive == null)			
+					_TabTvInactive = new Gdk.Pixbuf(null, "iMetaGui.Images.tvsettings_inactive.png");
+				return _TabTvInactive;
+			}
+		}
+		#endregion
 	}
 }
 

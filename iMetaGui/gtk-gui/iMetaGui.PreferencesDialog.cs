@@ -70,19 +70,19 @@ namespace iMetaGui
 		private global::Gtk.Table tblTabs;
 		private global::Gtk.EventBox eventTabAdvanced;
 		private global::Gtk.VBox vbox5;
-		private global::Gtk.Image image21;
+		private global::Gtk.Image imgTabAdvanced;
 		private global::Gtk.Label lblTabAdvanced;
 		private global::Gtk.EventBox eventTabGeneral;
 		private global::Gtk.VBox vbox2;
-		private global::Gtk.Image image14;
+		private global::Gtk.Image imgTabGeneral;
 		private global::Gtk.Label lblTabGeneral;
 		private global::Gtk.EventBox eventTabMovies;
 		private global::Gtk.VBox vbox3;
-		private global::Gtk.Image image15;
+		private global::Gtk.Image imgTabMovies;
 		private global::Gtk.Label lblTabMovies;
 		private global::Gtk.EventBox eventTabTvShows;
 		private global::Gtk.VBox vbox4;
-		private global::Gtk.Image image16;
+		private global::Gtk.Image imgTabTvShows;
 		private global::Gtk.Label lblTabTvShows;
 		private global::Gtk.Button buttonCancel;
 		private global::Gtk.Button buttonOk;
@@ -121,7 +121,7 @@ namespace iMetaGui
 			this.notebook1 = new global::Gtk.Notebook ();
 			this.notebook1.CanFocus = true;
 			this.notebook1.Name = "notebook1";
-			this.notebook1.CurrentPage = 2;
+			this.notebook1.CurrentPage = 1;
 			// Container child notebook1.Gtk.Notebook+NotebookChild
 			this.table2 = new global::Gtk.Table (((uint)(5)), ((uint)(3)), false);
 			this.table2.Name = "table2";
@@ -880,11 +880,11 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
 			this.vbox5.Name = "vbox5";
 			this.vbox5.Spacing = 6;
 			// Container child vbox5.Gtk.Box+BoxChild
-			this.image21 = new global::Gtk.Image ();
-			this.image21.Name = "image21";
-			this.image21.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("iMetaGui.Images.advanced.png");
-			this.vbox5.Add (this.image21);
-			global::Gtk.Box.BoxChild w92 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.image21]));
+			this.imgTabAdvanced = new global::Gtk.Image ();
+			this.imgTabAdvanced.Name = "imgTabAdvanced";
+			this.imgTabAdvanced.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("iMetaGui.Images.advanced.png");
+			this.vbox5.Add (this.imgTabAdvanced);
+			global::Gtk.Box.BoxChild w92 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.imgTabAdvanced]));
 			w92.Position = 0;
 			w92.Expand = false;
 			w92.Fill = false;
@@ -912,11 +912,11 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
 			this.vbox2.Name = "vbox2";
 			this.vbox2.Spacing = 6;
 			// Container child vbox2.Gtk.Box+BoxChild
-			this.image14 = new global::Gtk.Image ();
-			this.image14.Name = "image14";
-			this.image14.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("iMetaGui.Images.generalsettings.png");
-			this.vbox2.Add (this.image14);
-			global::Gtk.Box.BoxChild w96 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.image14]));
+			this.imgTabGeneral = new global::Gtk.Image ();
+			this.imgTabGeneral.Name = "imgTabGeneral";
+			this.imgTabGeneral.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("iMetaGui.Images.generalsettings.png");
+			this.vbox2.Add (this.imgTabGeneral);
+			global::Gtk.Box.BoxChild w96 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.imgTabGeneral]));
 			w96.Position = 0;
 			w96.Expand = false;
 			w96.Fill = false;
@@ -944,11 +944,11 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
 			this.vbox3.Name = "vbox3";
 			this.vbox3.Spacing = 6;
 			// Container child vbox3.Gtk.Box+BoxChild
-			this.image15 = new global::Gtk.Image ();
-			this.image15.Name = "image15";
-			this.image15.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("iMetaGui.Images.moviesettings.png");
-			this.vbox3.Add (this.image15);
-			global::Gtk.Box.BoxChild w100 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.image15]));
+			this.imgTabMovies = new global::Gtk.Image ();
+			this.imgTabMovies.Name = "imgTabMovies";
+			this.imgTabMovies.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("iMetaGui.Images.moviesettings.png");
+			this.vbox3.Add (this.imgTabMovies);
+			global::Gtk.Box.BoxChild w100 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.imgTabMovies]));
 			w100.Position = 0;
 			w100.Expand = false;
 			w100.Fill = false;
@@ -976,11 +976,11 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
 			this.vbox4.Name = "vbox4";
 			this.vbox4.Spacing = 6;
 			// Container child vbox4.Gtk.Box+BoxChild
-			this.image16 = new global::Gtk.Image ();
-			this.image16.Name = "image16";
-			this.image16.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("iMetaGui.Images.tvsettings.png");
-			this.vbox4.Add (this.image16);
-			global::Gtk.Box.BoxChild w104 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.image16]));
+			this.imgTabTvShows = new global::Gtk.Image ();
+			this.imgTabTvShows.Name = "imgTabTvShows";
+			this.imgTabTvShows.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("iMetaGui.Images.tvsettings.png");
+			this.vbox4.Add (this.imgTabTvShows);
+			global::Gtk.Box.BoxChild w104 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.imgTabTvShows]));
 			w104.Position = 0;
 			w104.Expand = false;
 			w104.Fill = false;
@@ -1043,7 +1043,7 @@ Note: Group 1 of the regex must return the show name, group 2 the season and gro
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 601;
+			this.DefaultWidth = 603;
 			this.DefaultHeight = 538;
 			this.Show ();
 		}

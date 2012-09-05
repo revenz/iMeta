@@ -171,7 +171,6 @@ namespace iMetaLibrary.Helpers
 				);
 				SaveImage (result, Destination);
 			}
-
         }
     }
 }

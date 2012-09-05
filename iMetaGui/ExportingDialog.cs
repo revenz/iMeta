@@ -13,6 +13,7 @@ namespace iMetaGui
 			notebook1.ShowTabs = false;
 			notebook1.ShowBorder = false;		
 			bkgWorker = new System.ComponentModel.BackgroundWorker();
+            bkgWorker.WorkerSupportsCancellation = true;
 			bkgWorker.DoWork += HandleBkgWorkerDoWork;
 			System.Timers.Timer pulsar = new System.Timers.Timer(50) { AutoReset = true};
 			pulsar.Elapsed += delegate {

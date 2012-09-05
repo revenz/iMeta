@@ -7,7 +7,7 @@ namespace iMetaGui
 	public partial class EpisodesEditorGui : Gtk.Dialog
 	{
 		iMetaLibrary.Metadata.TvFileMeta Meta;
-        private bool UsingTbnFile = false;
+        //private bool UsingTbnFile = false;
 		NodeStore store;
 		private ITreeNode SelectedEpisodeNode;
 		
@@ -26,7 +26,7 @@ namespace iMetaGui
 				{
 					imgThumbnail.Pixbuf = GuiHelper.ImageToPixbufIcon(image, 320, 240);
 				}
-                UsingTbnFile = true;
+                //UsingTbnFile = true;
             }
             else
             {

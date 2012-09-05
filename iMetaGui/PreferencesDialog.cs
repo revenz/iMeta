@@ -11,13 +11,16 @@ namespace iMetaGui
 	{
 		ListStore storeVideoExtensions;
 		NodeStore storeMovieFolders, storeTvFolders;
+
 		
 		public PreferencesDialog ()
 		{
 			this.Build ();
-			
+
 			notebook1.ShowTabs = false;
 			notebook1.ShowBorder = false;
+			
+			ChangeTab(0);
 			
 			storeMovieFolders = new NodeStore (typeof(StringNode));
 			storeTvFolders = new NodeStore (typeof(StringNode));
@@ -46,16 +49,16 @@ namespace iMetaGui
 				RemoveFolder (nvTvFolders, storeTvFolders);
 			};	 
 			eventTabGeneral.ButtonPressEvent += delegate {
-				notebook1.Page = 0;
+				ChangeTab(0);
 			};
 			eventTabMovies.ButtonPressEvent += delegate {
-				notebook1.Page = 1;
+				ChangeTab (1);
 			};
 			eventTabTvShows.ButtonPressEvent += delegate {
-				notebook1.Page = 2;
+				ChangeTab (2);
 			};
 			eventTabAdvanced.ButtonPressEvent += delegate {
-				notebook1.Page = 3;
+				ChangeTab (3);
 			};
 			eventTabMovies.ExposeEvent += delegate {
 				
@@ -143,6 +146,29 @@ namespace iMetaGui
 			btnRemoveVideoExtension.Clicked += delegate {
 				
 			};
+		}
+
+		void ChangeTab (int TabIndex)
+		{
+			notebook1.Page = TabIndex;
+			imgTabAdvanced.Pixbuf = Images.TabAdvancedInactive;
+			imgTabGeneral.Pixbuf = Images.TabGeneralInactive;
+			imgTabMovies.Pixbuf = Images.TabMoviesInactive;
+			imgTabTvShows.Pixbuf = Images.TabTvInactive;
+			switch (TabIndex) {
+				case 0: 
+					imgTabGeneral.Pixbuf = Images.TabGeneral;
+					break;
+				case 1: 
+					imgTabMovies.Pixbuf = Images.TabMovies;
+					break;
+				case 2: 
+					imgTabTvShows.Pixbuf = Images.TabTv;
+					break;
+				case 3: 
+					imgTabAdvanced.Pixbuf = Images.TabAdvanced;
+					break;
+			}
 		}
 
 		void HandleButtonOkClicked (object sender, EventArgs e)

@@ -6,8 +6,9 @@ namespace iMetaGui
 	{
 		private global::Gtk.HBox hbox1;
 		private global::Gtk.VBox vbox2;
-		private global::Gtk.Image imgPoster;
+		private global::Gtk.EventBox eventPoster;
 		private global::iMetaGui.RatingWidget ratingwidget;
+		private global::Gtk.Fixed fixed1;
 		private global::Gtk.EventBox ebDetailsBackground;
 		private global::Gtk.Table table2;
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
@@ -66,18 +67,17 @@ namespace iMetaGui
 			this.hbox1.Spacing = 6;
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.vbox2 = new global::Gtk.VBox ();
+			this.vbox2.HeightRequest = 320;
 			this.vbox2.Name = "vbox2";
 			this.vbox2.Spacing = 6;
 			// Container child vbox2.Gtk.Box+BoxChild
-			this.imgPoster = new global::Gtk.Image ();
-			this.imgPoster.WidthRequest = 330;
-			this.imgPoster.HeightRequest = 470;
-			this.imgPoster.Name = "imgPoster";
-			this.vbox2.Add (this.imgPoster);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.imgPoster]));
+			this.eventPoster = new global::Gtk.EventBox ();
+			this.eventPoster.HeightRequest = 440;
+			this.eventPoster.Name = "eventPoster";
+			this.eventPoster.VisibleWindow = false;
+			this.vbox2.Add (this.eventPoster);
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.eventPoster]));
 			w2.Position = 0;
-			w2.Expand = false;
-			w2.Fill = false;
 			// Container child vbox2.Gtk.Box+BoxChild
 			this.ratingwidget = new global::iMetaGui.RatingWidget ();
 			this.ratingwidget.HeightRequest = 15;
@@ -89,11 +89,21 @@ namespace iMetaGui
 			w3.Position = 1;
 			w3.Expand = false;
 			w3.Fill = false;
-			this.hbox1.Add (this.vbox2);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.vbox2]));
-			w4.Position = 0;
+			// Container child vbox2.Gtk.Box+BoxChild
+			this.fixed1 = new global::Gtk.Fixed ();
+			this.fixed1.HeightRequest = 30;
+			this.fixed1.Name = "fixed1";
+			this.fixed1.HasWindow = false;
+			this.vbox2.Add (this.fixed1);
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.fixed1]));
+			w4.Position = 2;
 			w4.Expand = false;
 			w4.Fill = false;
+			this.hbox1.Add (this.vbox2);
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.vbox2]));
+			w5.Position = 0;
+			w5.Expand = false;
+			w5.Fill = false;
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.ebDetailsBackground = new global::Gtk.EventBox ();
 			this.ebDetailsBackground.Name = "ebDetailsBackground";
@@ -113,13 +123,13 @@ namespace iMetaGui
 			this.txtPlot.WrapMode = ((global::Gtk.WrapMode)(2));
 			this.GtkScrolledWindow.Add (this.txtPlot);
 			this.table2.Add (this.GtkScrolledWindow);
-			global::Gtk.Table.TableChild w6 = ((global::Gtk.Table.TableChild)(this.table2 [this.GtkScrolledWindow]));
-			w6.TopAttach = ((uint)(9));
-			w6.BottomAttach = ((uint)(10));
-			w6.LeftAttach = ((uint)(1));
-			w6.RightAttach = ((uint)(4));
-			w6.XOptions = ((global::Gtk.AttachOptions)(4));
-			w6.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table2 [this.GtkScrolledWindow]));
+			w7.TopAttach = ((uint)(9));
+			w7.BottomAttach = ((uint)(10));
+			w7.LeftAttach = ((uint)(1));
+			w7.RightAttach = ((uint)(4));
+			w7.XOptions = ((global::Gtk.AttachOptions)(4));
+			w7.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.GtkScrolledWindow1 = new global::Gtk.ScrolledWindow ();
 			this.GtkScrolledWindow1.HeightRequest = 142;
@@ -131,13 +141,13 @@ namespace iMetaGui
 			this.nvActors.Name = "nvActors";
 			this.GtkScrolledWindow1.Add (this.nvActors);
 			this.table2.Add (this.GtkScrolledWindow1);
-			global::Gtk.Table.TableChild w8 = ((global::Gtk.Table.TableChild)(this.table2 [this.GtkScrolledWindow1]));
-			w8.TopAttach = ((uint)(10));
-			w8.BottomAttach = ((uint)(11));
-			w8.LeftAttach = ((uint)(1));
-			w8.RightAttach = ((uint)(4));
-			w8.XOptions = ((global::Gtk.AttachOptions)(4));
-			w8.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table2 [this.GtkScrolledWindow1]));
+			w9.TopAttach = ((uint)(10));
+			w9.BottomAttach = ((uint)(11));
+			w9.LeftAttach = ((uint)(1));
+			w9.RightAttach = ((uint)(4));
+			w9.XOptions = ((global::Gtk.AttachOptions)(4));
+			w9.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.hbox2 = new global::Gtk.HBox ();
 			this.hbox2.Name = "hbox2";
@@ -150,10 +160,10 @@ namespace iMetaGui
 			this.btnActorsAdd.UseUnderline = true;
 			this.btnActorsAdd.Label = "gtk-add";
 			this.hbox2.Add (this.btnActorsAdd);
-			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.btnActorsAdd]));
-			w9.Position = 0;
-			w9.Expand = false;
-			w9.Fill = false;
+			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.btnActorsAdd]));
+			w10.Position = 0;
+			w10.Expand = false;
+			w10.Fill = false;
 			// Container child hbox2.Gtk.Box+BoxChild
 			this.btnActorsRemove = new global::Gtk.Button ();
 			this.btnActorsRemove.CanFocus = true;
@@ -162,18 +172,18 @@ namespace iMetaGui
 			this.btnActorsRemove.UseUnderline = true;
 			this.btnActorsRemove.Label = "gtk-remove";
 			this.hbox2.Add (this.btnActorsRemove);
-			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.btnActorsRemove]));
-			w10.Position = 1;
-			w10.Expand = false;
-			w10.Fill = false;
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.btnActorsRemove]));
+			w11.Position = 1;
+			w11.Expand = false;
+			w11.Fill = false;
 			this.table2.Add (this.hbox2);
-			global::Gtk.Table.TableChild w11 = ((global::Gtk.Table.TableChild)(this.table2 [this.hbox2]));
-			w11.TopAttach = ((uint)(11));
-			w11.BottomAttach = ((uint)(12));
-			w11.LeftAttach = ((uint)(1));
-			w11.RightAttach = ((uint)(2));
-			w11.XOptions = ((global::Gtk.AttachOptions)(4));
-			w11.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w12 = ((global::Gtk.Table.TableChild)(this.table2 [this.hbox2]));
+			w12.TopAttach = ((uint)(11));
+			w12.BottomAttach = ((uint)(12));
+			w12.LeftAttach = ((uint)(1));
+			w12.RightAttach = ((uint)(2));
+			w12.XOptions = ((global::Gtk.AttachOptions)(4));
+			w12.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label1 = new global::Gtk.Label ();
 			this.label1.Name = "label1";
@@ -183,9 +193,9 @@ namespace iMetaGui
 			this.label1.Yalign = 0F;
 			this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Title:");
 			this.table2.Add (this.label1);
-			global::Gtk.Table.TableChild w12 = ((global::Gtk.Table.TableChild)(this.table2 [this.label1]));
-			w12.XOptions = ((global::Gtk.AttachOptions)(4));
-			w12.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w13 = ((global::Gtk.Table.TableChild)(this.table2 [this.label1]));
+			w13.XOptions = ((global::Gtk.AttachOptions)(4));
+			w13.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label10 = new global::Gtk.Label ();
 			this.label10.Name = "label10";
@@ -195,11 +205,11 @@ namespace iMetaGui
 			this.label10.Yalign = 0F;
 			this.label10.LabelProp = global::Mono.Unix.Catalog.GetString ("IMDB ID:");
 			this.table2.Add (this.label10);
-			global::Gtk.Table.TableChild w13 = ((global::Gtk.Table.TableChild)(this.table2 [this.label10]));
-			w13.TopAttach = ((uint)(7));
-			w13.BottomAttach = ((uint)(8));
-			w13.XOptions = ((global::Gtk.AttachOptions)(4));
-			w13.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w14 = ((global::Gtk.Table.TableChild)(this.table2 [this.label10]));
+			w14.TopAttach = ((uint)(7));
+			w14.BottomAttach = ((uint)(8));
+			w14.XOptions = ((global::Gtk.AttachOptions)(4));
+			w14.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label11 = new global::Gtk.Label ();
 			this.label11.Name = "label11";
@@ -209,11 +219,11 @@ namespace iMetaGui
 			this.label11.Yalign = 0F;
 			this.label11.LabelProp = global::Mono.Unix.Catalog.GetString ("Runtime:");
 			this.table2.Add (this.label11);
-			global::Gtk.Table.TableChild w14 = ((global::Gtk.Table.TableChild)(this.table2 [this.label11]));
-			w14.TopAttach = ((uint)(8));
-			w14.BottomAttach = ((uint)(9));
-			w14.XOptions = ((global::Gtk.AttachOptions)(4));
-			w14.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w15 = ((global::Gtk.Table.TableChild)(this.table2 [this.label11]));
+			w15.TopAttach = ((uint)(8));
+			w15.BottomAttach = ((uint)(9));
+			w15.XOptions = ((global::Gtk.AttachOptions)(4));
+			w15.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label12 = new global::Gtk.Label ();
 			this.label12.Name = "label12";
@@ -223,11 +233,11 @@ namespace iMetaGui
 			this.label12.Yalign = 0F;
 			this.label12.LabelProp = global::Mono.Unix.Catalog.GetString ("Plot:");
 			this.table2.Add (this.label12);
-			global::Gtk.Table.TableChild w15 = ((global::Gtk.Table.TableChild)(this.table2 [this.label12]));
-			w15.TopAttach = ((uint)(9));
-			w15.BottomAttach = ((uint)(10));
-			w15.XOptions = ((global::Gtk.AttachOptions)(4));
-			w15.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w16 = ((global::Gtk.Table.TableChild)(this.table2 [this.label12]));
+			w16.TopAttach = ((uint)(9));
+			w16.BottomAttach = ((uint)(10));
+			w16.XOptions = ((global::Gtk.AttachOptions)(4));
+			w16.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label13 = new global::Gtk.Label ();
 			this.label13.Name = "label13";
@@ -237,11 +247,11 @@ namespace iMetaGui
 			this.label13.Yalign = 0F;
 			this.label13.LabelProp = global::Mono.Unix.Catalog.GetString ("Cast:");
 			this.table2.Add (this.label13);
-			global::Gtk.Table.TableChild w16 = ((global::Gtk.Table.TableChild)(this.table2 [this.label13]));
-			w16.TopAttach = ((uint)(10));
-			w16.BottomAttach = ((uint)(11));
-			w16.XOptions = ((global::Gtk.AttachOptions)(4));
-			w16.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w17 = ((global::Gtk.Table.TableChild)(this.table2 [this.label13]));
+			w17.TopAttach = ((uint)(10));
+			w17.BottomAttach = ((uint)(11));
+			w17.XOptions = ((global::Gtk.AttachOptions)(4));
+			w17.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label15 = new global::Gtk.Label ();
 			this.label15.Name = "label15";
@@ -251,13 +261,13 @@ namespace iMetaGui
 			this.label15.Yalign = 0F;
 			this.label15.LabelProp = global::Mono.Unix.Catalog.GetString ("MPAA:");
 			this.table2.Add (this.label15);
-			global::Gtk.Table.TableChild w17 = ((global::Gtk.Table.TableChild)(this.table2 [this.label15]));
-			w17.TopAttach = ((uint)(7));
-			w17.BottomAttach = ((uint)(8));
-			w17.LeftAttach = ((uint)(2));
-			w17.RightAttach = ((uint)(3));
-			w17.XOptions = ((global::Gtk.AttachOptions)(4));
-			w17.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w18 = ((global::Gtk.Table.TableChild)(this.table2 [this.label15]));
+			w18.TopAttach = ((uint)(7));
+			w18.BottomAttach = ((uint)(8));
+			w18.LeftAttach = ((uint)(2));
+			w18.RightAttach = ((uint)(3));
+			w18.XOptions = ((global::Gtk.AttachOptions)(4));
+			w18.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label16 = new global::Gtk.Label ();
 			this.label16.Name = "label16";
@@ -267,13 +277,13 @@ namespace iMetaGui
 			this.label16.Yalign = 0F;
 			this.label16.LabelProp = global::Mono.Unix.Catalog.GetString ("Release Date:");
 			this.table2.Add (this.label16);
-			global::Gtk.Table.TableChild w18 = ((global::Gtk.Table.TableChild)(this.table2 [this.label16]));
-			w18.TopAttach = ((uint)(8));
-			w18.BottomAttach = ((uint)(9));
-			w18.LeftAttach = ((uint)(2));
-			w18.RightAttach = ((uint)(3));
-			w18.XOptions = ((global::Gtk.AttachOptions)(4));
-			w18.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w19 = ((global::Gtk.Table.TableChild)(this.table2 [this.label16]));
+			w19.TopAttach = ((uint)(8));
+			w19.BottomAttach = ((uint)(9));
+			w19.LeftAttach = ((uint)(2));
+			w19.RightAttach = ((uint)(3));
+			w19.XOptions = ((global::Gtk.AttachOptions)(4));
+			w19.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label3 = new global::Gtk.Label ();
 			this.label3.Name = "label3";
@@ -283,11 +293,11 @@ namespace iMetaGui
 			this.label3.Yalign = 0F;
 			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Sort Title:");
 			this.table2.Add (this.label3);
-			global::Gtk.Table.TableChild w19 = ((global::Gtk.Table.TableChild)(this.table2 [this.label3]));
-			w19.TopAttach = ((uint)(1));
-			w19.BottomAttach = ((uint)(2));
-			w19.XOptions = ((global::Gtk.AttachOptions)(4));
-			w19.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w20 = ((global::Gtk.Table.TableChild)(this.table2 [this.label3]));
+			w20.TopAttach = ((uint)(1));
+			w20.BottomAttach = ((uint)(2));
+			w20.XOptions = ((global::Gtk.AttachOptions)(4));
+			w20.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label4 = new global::Gtk.Label ();
 			this.label4.Name = "label4";
@@ -297,13 +307,13 @@ namespace iMetaGui
 			this.label4.Yalign = 0F;
 			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Set:");
 			this.table2.Add (this.label4);
-			global::Gtk.Table.TableChild w20 = ((global::Gtk.Table.TableChild)(this.table2 [this.label4]));
-			w20.TopAttach = ((uint)(1));
-			w20.BottomAttach = ((uint)(2));
-			w20.LeftAttach = ((uint)(2));
-			w20.RightAttach = ((uint)(3));
-			w20.XOptions = ((global::Gtk.AttachOptions)(4));
-			w20.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w21 = ((global::Gtk.Table.TableChild)(this.table2 [this.label4]));
+			w21.TopAttach = ((uint)(1));
+			w21.BottomAttach = ((uint)(2));
+			w21.LeftAttach = ((uint)(2));
+			w21.RightAttach = ((uint)(3));
+			w21.XOptions = ((global::Gtk.AttachOptions)(4));
+			w21.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label5 = new global::Gtk.Label ();
 			this.label5.Name = "label5";
@@ -313,11 +323,11 @@ namespace iMetaGui
 			this.label5.Yalign = 0F;
 			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Tagline:");
 			this.table2.Add (this.label5);
-			global::Gtk.Table.TableChild w21 = ((global::Gtk.Table.TableChild)(this.table2 [this.label5]));
-			w21.TopAttach = ((uint)(2));
-			w21.BottomAttach = ((uint)(3));
-			w21.XOptions = ((global::Gtk.AttachOptions)(4));
-			w21.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w22 = ((global::Gtk.Table.TableChild)(this.table2 [this.label5]));
+			w22.TopAttach = ((uint)(2));
+			w22.BottomAttach = ((uint)(3));
+			w22.XOptions = ((global::Gtk.AttachOptions)(4));
+			w22.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label6 = new global::Gtk.Label ();
 			this.label6.Name = "label6";
@@ -327,11 +337,11 @@ namespace iMetaGui
 			this.label6.Yalign = 0F;
 			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("Genres:");
 			this.table2.Add (this.label6);
-			global::Gtk.Table.TableChild w22 = ((global::Gtk.Table.TableChild)(this.table2 [this.label6]));
-			w22.TopAttach = ((uint)(3));
-			w22.BottomAttach = ((uint)(4));
-			w22.XOptions = ((global::Gtk.AttachOptions)(4));
-			w22.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table2 [this.label6]));
+			w23.TopAttach = ((uint)(3));
+			w23.BottomAttach = ((uint)(4));
+			w23.XOptions = ((global::Gtk.AttachOptions)(4));
+			w23.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label7 = new global::Gtk.Label ();
 			this.label7.Name = "label7";
@@ -341,11 +351,11 @@ namespace iMetaGui
 			this.label7.Yalign = 0F;
 			this.label7.LabelProp = global::Mono.Unix.Catalog.GetString ("Diretors:");
 			this.table2.Add (this.label7);
-			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table2 [this.label7]));
-			w23.TopAttach = ((uint)(4));
-			w23.BottomAttach = ((uint)(5));
-			w23.XOptions = ((global::Gtk.AttachOptions)(4));
-			w23.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w24 = ((global::Gtk.Table.TableChild)(this.table2 [this.label7]));
+			w24.TopAttach = ((uint)(4));
+			w24.BottomAttach = ((uint)(5));
+			w24.XOptions = ((global::Gtk.AttachOptions)(4));
+			w24.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label8 = new global::Gtk.Label ();
 			this.label8.Name = "label8";
@@ -355,11 +365,11 @@ namespace iMetaGui
 			this.label8.Yalign = 0F;
 			this.label8.LabelProp = global::Mono.Unix.Catalog.GetString ("Writers:");
 			this.table2.Add (this.label8);
-			global::Gtk.Table.TableChild w24 = ((global::Gtk.Table.TableChild)(this.table2 [this.label8]));
-			w24.TopAttach = ((uint)(5));
-			w24.BottomAttach = ((uint)(6));
-			w24.XOptions = ((global::Gtk.AttachOptions)(4));
-			w24.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.table2 [this.label8]));
+			w25.TopAttach = ((uint)(5));
+			w25.BottomAttach = ((uint)(6));
+			w25.XOptions = ((global::Gtk.AttachOptions)(4));
+			w25.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.label9 = new global::Gtk.Label ();
 			this.label9.Name = "label9";
@@ -369,11 +379,11 @@ namespace iMetaGui
 			this.label9.Yalign = 0F;
 			this.label9.LabelProp = global::Mono.Unix.Catalog.GetString ("Trailer:");
 			this.table2.Add (this.label9);
-			global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.table2 [this.label9]));
-			w25.TopAttach = ((uint)(6));
-			w25.BottomAttach = ((uint)(7));
-			w25.XOptions = ((global::Gtk.AttachOptions)(4));
-			w25.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w26 = ((global::Gtk.Table.TableChild)(this.table2 [this.label9]));
+			w26.TopAttach = ((uint)(6));
+			w26.BottomAttach = ((uint)(7));
+			w26.XOptions = ((global::Gtk.AttachOptions)(4));
+			w26.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.numRuntime = new global::Gtk.SpinButton (0D, 100D, 1D);
 			this.numRuntime.CanFocus = true;
@@ -382,13 +392,13 @@ namespace iMetaGui
 			this.numRuntime.ClimbRate = 1D;
 			this.numRuntime.Numeric = true;
 			this.table2.Add (this.numRuntime);
-			global::Gtk.Table.TableChild w26 = ((global::Gtk.Table.TableChild)(this.table2 [this.numRuntime]));
-			w26.TopAttach = ((uint)(8));
-			w26.BottomAttach = ((uint)(9));
-			w26.LeftAttach = ((uint)(1));
-			w26.RightAttach = ((uint)(2));
-			w26.XOptions = ((global::Gtk.AttachOptions)(4));
-			w26.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.table2 [this.numRuntime]));
+			w27.TopAttach = ((uint)(8));
+			w27.BottomAttach = ((uint)(9));
+			w27.LeftAttach = ((uint)(1));
+			w27.RightAttach = ((uint)(2));
+			w27.XOptions = ((global::Gtk.AttachOptions)(4));
+			w27.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtDirectors = new global::Gtk.Entry ();
 			this.txtDirectors.CanFocus = true;
@@ -396,13 +406,13 @@ namespace iMetaGui
 			this.txtDirectors.IsEditable = true;
 			this.txtDirectors.InvisibleChar = '●';
 			this.table2.Add (this.txtDirectors);
-			global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtDirectors]));
-			w27.TopAttach = ((uint)(4));
-			w27.BottomAttach = ((uint)(5));
-			w27.LeftAttach = ((uint)(1));
-			w27.RightAttach = ((uint)(4));
-			w27.XOptions = ((global::Gtk.AttachOptions)(4));
-			w27.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w28 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtDirectors]));
+			w28.TopAttach = ((uint)(4));
+			w28.BottomAttach = ((uint)(5));
+			w28.LeftAttach = ((uint)(1));
+			w28.RightAttach = ((uint)(4));
+			w28.XOptions = ((global::Gtk.AttachOptions)(4));
+			w28.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtGenres = new global::Gtk.Entry ();
 			this.txtGenres.CanFocus = true;
@@ -410,13 +420,13 @@ namespace iMetaGui
 			this.txtGenres.IsEditable = true;
 			this.txtGenres.InvisibleChar = '●';
 			this.table2.Add (this.txtGenres);
-			global::Gtk.Table.TableChild w28 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtGenres]));
-			w28.TopAttach = ((uint)(3));
-			w28.BottomAttach = ((uint)(4));
-			w28.LeftAttach = ((uint)(1));
-			w28.RightAttach = ((uint)(4));
-			w28.XOptions = ((global::Gtk.AttachOptions)(4));
-			w28.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtGenres]));
+			w29.TopAttach = ((uint)(3));
+			w29.BottomAttach = ((uint)(4));
+			w29.LeftAttach = ((uint)(1));
+			w29.RightAttach = ((uint)(4));
+			w29.XOptions = ((global::Gtk.AttachOptions)(4));
+			w29.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtImdbId = new global::Gtk.Entry ();
 			this.txtImdbId.WidthRequest = 200;
@@ -425,13 +435,13 @@ namespace iMetaGui
 			this.txtImdbId.IsEditable = true;
 			this.txtImdbId.InvisibleChar = '●';
 			this.table2.Add (this.txtImdbId);
-			global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtImdbId]));
-			w29.TopAttach = ((uint)(7));
-			w29.BottomAttach = ((uint)(8));
-			w29.LeftAttach = ((uint)(1));
-			w29.RightAttach = ((uint)(2));
-			w29.XOptions = ((global::Gtk.AttachOptions)(4));
-			w29.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w30 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtImdbId]));
+			w30.TopAttach = ((uint)(7));
+			w30.BottomAttach = ((uint)(8));
+			w30.LeftAttach = ((uint)(1));
+			w30.RightAttach = ((uint)(2));
+			w30.XOptions = ((global::Gtk.AttachOptions)(4));
+			w30.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtMpaa = new global::Gtk.Entry ();
 			this.txtMpaa.WidthRequest = 200;
@@ -440,12 +450,12 @@ namespace iMetaGui
 			this.txtMpaa.IsEditable = true;
 			this.txtMpaa.InvisibleChar = '●';
 			this.table2.Add (this.txtMpaa);
-			global::Gtk.Table.TableChild w30 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtMpaa]));
-			w30.TopAttach = ((uint)(7));
-			w30.BottomAttach = ((uint)(8));
-			w30.LeftAttach = ((uint)(3));
-			w30.RightAttach = ((uint)(4));
-			w30.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w31 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtMpaa]));
+			w31.TopAttach = ((uint)(7));
+			w31.BottomAttach = ((uint)(8));
+			w31.LeftAttach = ((uint)(3));
+			w31.RightAttach = ((uint)(4));
+			w31.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtReleaseDate = new global::Gtk.Entry ();
 			this.txtReleaseDate.WidthRequest = 200;
@@ -454,12 +464,12 @@ namespace iMetaGui
 			this.txtReleaseDate.IsEditable = true;
 			this.txtReleaseDate.InvisibleChar = '●';
 			this.table2.Add (this.txtReleaseDate);
-			global::Gtk.Table.TableChild w31 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtReleaseDate]));
-			w31.TopAttach = ((uint)(8));
-			w31.BottomAttach = ((uint)(9));
-			w31.LeftAttach = ((uint)(3));
-			w31.RightAttach = ((uint)(4));
-			w31.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w32 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtReleaseDate]));
+			w32.TopAttach = ((uint)(8));
+			w32.BottomAttach = ((uint)(9));
+			w32.LeftAttach = ((uint)(3));
+			w32.RightAttach = ((uint)(4));
+			w32.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtSet = new global::Gtk.Entry ();
 			this.txtSet.CanFocus = true;
@@ -467,12 +477,12 @@ namespace iMetaGui
 			this.txtSet.IsEditable = true;
 			this.txtSet.InvisibleChar = '●';
 			this.table2.Add (this.txtSet);
-			global::Gtk.Table.TableChild w32 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtSet]));
-			w32.TopAttach = ((uint)(1));
-			w32.BottomAttach = ((uint)(2));
-			w32.LeftAttach = ((uint)(3));
-			w32.RightAttach = ((uint)(4));
-			w32.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w33 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtSet]));
+			w33.TopAttach = ((uint)(1));
+			w33.BottomAttach = ((uint)(2));
+			w33.LeftAttach = ((uint)(3));
+			w33.RightAttach = ((uint)(4));
+			w33.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtSortTitle = new global::Gtk.Entry ();
 			this.txtSortTitle.CanFocus = true;
@@ -480,13 +490,13 @@ namespace iMetaGui
 			this.txtSortTitle.IsEditable = true;
 			this.txtSortTitle.InvisibleChar = '●';
 			this.table2.Add (this.txtSortTitle);
-			global::Gtk.Table.TableChild w33 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtSortTitle]));
-			w33.TopAttach = ((uint)(1));
-			w33.BottomAttach = ((uint)(2));
-			w33.LeftAttach = ((uint)(1));
-			w33.RightAttach = ((uint)(2));
-			w33.XOptions = ((global::Gtk.AttachOptions)(4));
-			w33.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w34 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtSortTitle]));
+			w34.TopAttach = ((uint)(1));
+			w34.BottomAttach = ((uint)(2));
+			w34.LeftAttach = ((uint)(1));
+			w34.RightAttach = ((uint)(2));
+			w34.XOptions = ((global::Gtk.AttachOptions)(4));
+			w34.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtTagline = new global::Gtk.Entry ();
 			this.txtTagline.CanFocus = true;
@@ -494,13 +504,13 @@ namespace iMetaGui
 			this.txtTagline.IsEditable = true;
 			this.txtTagline.InvisibleChar = '●';
 			this.table2.Add (this.txtTagline);
-			global::Gtk.Table.TableChild w34 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtTagline]));
-			w34.TopAttach = ((uint)(2));
-			w34.BottomAttach = ((uint)(3));
-			w34.LeftAttach = ((uint)(1));
-			w34.RightAttach = ((uint)(4));
-			w34.XOptions = ((global::Gtk.AttachOptions)(4));
-			w34.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w35 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtTagline]));
+			w35.TopAttach = ((uint)(2));
+			w35.BottomAttach = ((uint)(3));
+			w35.LeftAttach = ((uint)(1));
+			w35.RightAttach = ((uint)(4));
+			w35.XOptions = ((global::Gtk.AttachOptions)(4));
+			w35.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtTitle = new global::Gtk.Entry ();
 			this.txtTitle.CanFocus = true;
@@ -508,11 +518,11 @@ namespace iMetaGui
 			this.txtTitle.IsEditable = true;
 			this.txtTitle.InvisibleChar = '●';
 			this.table2.Add (this.txtTitle);
-			global::Gtk.Table.TableChild w35 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtTitle]));
-			w35.LeftAttach = ((uint)(1));
-			w35.RightAttach = ((uint)(4));
-			w35.XOptions = ((global::Gtk.AttachOptions)(4));
-			w35.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w36 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtTitle]));
+			w36.LeftAttach = ((uint)(1));
+			w36.RightAttach = ((uint)(4));
+			w36.XOptions = ((global::Gtk.AttachOptions)(4));
+			w36.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtTrailer = new global::Gtk.Entry ();
 			this.txtTrailer.CanFocus = true;
@@ -520,13 +530,13 @@ namespace iMetaGui
 			this.txtTrailer.IsEditable = true;
 			this.txtTrailer.InvisibleChar = '●';
 			this.table2.Add (this.txtTrailer);
-			global::Gtk.Table.TableChild w36 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtTrailer]));
-			w36.TopAttach = ((uint)(6));
-			w36.BottomAttach = ((uint)(7));
-			w36.LeftAttach = ((uint)(1));
-			w36.RightAttach = ((uint)(4));
-			w36.XOptions = ((global::Gtk.AttachOptions)(4));
-			w36.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w37 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtTrailer]));
+			w37.TopAttach = ((uint)(6));
+			w37.BottomAttach = ((uint)(7));
+			w37.LeftAttach = ((uint)(1));
+			w37.RightAttach = ((uint)(4));
+			w37.XOptions = ((global::Gtk.AttachOptions)(4));
+			w37.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.txtWriters = new global::Gtk.Entry ();
 			this.txtWriters.CanFocus = true;
@@ -534,28 +544,26 @@ namespace iMetaGui
 			this.txtWriters.IsEditable = true;
 			this.txtWriters.InvisibleChar = '●';
 			this.table2.Add (this.txtWriters);
-			global::Gtk.Table.TableChild w37 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtWriters]));
-			w37.TopAttach = ((uint)(5));
-			w37.BottomAttach = ((uint)(6));
-			w37.LeftAttach = ((uint)(1));
-			w37.RightAttach = ((uint)(4));
-			w37.XOptions = ((global::Gtk.AttachOptions)(4));
-			w37.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w38 = ((global::Gtk.Table.TableChild)(this.table2 [this.txtWriters]));
+			w38.TopAttach = ((uint)(5));
+			w38.BottomAttach = ((uint)(6));
+			w38.LeftAttach = ((uint)(1));
+			w38.RightAttach = ((uint)(4));
+			w38.XOptions = ((global::Gtk.AttachOptions)(4));
+			w38.YOptions = ((global::Gtk.AttachOptions)(4));
 			this.ebDetailsBackground.Add (this.table2);
 			this.hbox1.Add (this.ebDetailsBackground);
-			global::Gtk.Box.BoxChild w39 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.ebDetailsBackground]));
-			w39.Position = 1;
+			global::Gtk.Box.BoxChild w40 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.ebDetailsBackground]));
+			w40.Position = 1;
 			w1.Add (this.hbox1);
-			global::Gtk.Box.BoxChild w40 = ((global::Gtk.Box.BoxChild)(w1 [this.hbox1]));
-			w40.Position = 0;
-			w40.Expand = false;
-			w40.Fill = false;
+			global::Gtk.Box.BoxChild w41 = ((global::Gtk.Box.BoxChild)(w1 [this.hbox1]));
+			w41.Position = 0;
 			// Internal child iMetaGui.MovieEditor.ActionArea
-			global::Gtk.HButtonBox w41 = this.ActionArea;
-			w41.Name = "dialog1_ActionArea";
-			w41.Spacing = 10;
-			w41.BorderWidth = ((uint)(5));
-			w41.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			global::Gtk.HButtonBox w42 = this.ActionArea;
+			w42.Name = "dialog1_ActionArea";
+			w42.Spacing = 10;
+			w42.BorderWidth = ((uint)(5));
+			w42.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonCancel = new global::Gtk.Button ();
 			this.buttonCancel.CanDefault = true;
@@ -565,9 +573,9 @@ namespace iMetaGui
 			this.buttonCancel.UseUnderline = true;
 			this.buttonCancel.Label = "gtk-cancel";
 			this.AddActionWidget (this.buttonCancel, -6);
-			global::Gtk.ButtonBox.ButtonBoxChild w42 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w41 [this.buttonCancel]));
-			w42.Expand = false;
-			w42.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w43 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w42 [this.buttonCancel]));
+			w43.Expand = false;
+			w43.Fill = false;
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonOk = new global::Gtk.Button ();
 			this.buttonOk.CanDefault = true;
@@ -576,11 +584,11 @@ namespace iMetaGui
 			this.buttonOk.UseStock = true;
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = "gtk-save";
-			w41.Add (this.buttonOk);
-			global::Gtk.ButtonBox.ButtonBoxChild w43 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w41 [this.buttonOk]));
-			w43.Position = 1;
-			w43.Expand = false;
-			w43.Fill = false;
+			w42.Add (this.buttonOk);
+			global::Gtk.ButtonBox.ButtonBoxChild w44 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w42 [this.buttonOk]));
+			w44.Position = 1;
+			w44.Expand = false;
+			w44.Fill = false;
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
