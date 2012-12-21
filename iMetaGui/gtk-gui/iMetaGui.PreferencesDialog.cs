@@ -611,8 +611,8 @@ namespace iMetaGui
 			this.lblAutoRenameDescription.Xalign = 0F;
 			this.lblAutoRenameDescription.Yalign = 0F;
 			this.lblAutoRenameDescription.LabelProp = global::Mono.Unix.Catalog.GetString ("<span size=\"small\">Episodes will be renamed automatically to the folllowing forma" +
-				"t\n     [Show Title] - [Season]x[EpisodeNumber] - [Episode Name].[extension]\n</sp" +
-				"an>"
+				"t\r\n     [Show Title] - [Season]x[EpisodeNumber] - [Episode Name].[extension]\r\n</" +
+				"span>"
 			);
 			this.lblAutoRenameDescription.UseMarkup = true;
 			this.table4.Add (this.lblAutoRenameDescription);

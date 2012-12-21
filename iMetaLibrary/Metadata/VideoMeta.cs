@@ -30,7 +30,8 @@ namespace iMetaLibrary.Metadata
 
         public string NfoFile { get; protected set; }
 
-        public VideoMeta(string Filename) : base(Filename) { }
+        public VideoMeta(string Filename) : base(Filename) {
+        }
 
         public Image LoadThumbnail(int MaxWidth = 300, int MaxHeight = 300)
         {

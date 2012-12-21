@@ -53,9 +53,9 @@ namespace iMetaGui
 			this.table1.RowSpacing = ((uint)(6));
 			// Container child table1.Gtk.Table+TableChild
 			this.cboStatus = global::Gtk.ComboBox.NewText ();
-			this.cboStatus.AppendText (global::Mono.Unix.Catalog.GetString ("Continuing"));
-			this.cboStatus.AppendText (global::Mono.Unix.Catalog.GetString ("Ended"));
-			this.cboStatus.AppendText (global::Mono.Unix.Catalog.GetString ("On Hiatus"));
+			this.cboStatus.AppendText (global::Mono.Unix.Catalog.GetString ("Continuing\r"));
+			this.cboStatus.AppendText (global::Mono.Unix.Catalog.GetString ("Ended\r"));
+			this.cboStatus.AppendText (global::Mono.Unix.Catalog.GetString ("On Hiatus\r"));
 			this.cboStatus.AppendText (global::Mono.Unix.Catalog.GetString ("Other"));
 			this.cboStatus.Name = "cboStatus";
 			this.cboStatus.Active = 0;

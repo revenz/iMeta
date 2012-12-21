@@ -115,8 +115,8 @@ namespace iMetaGui
 			// Container child notebook1.Gtk.Notebook+NotebookChild
 			this.label8 = new global::Gtk.Label ();
 			this.label8.Name = "label8";
-			this.label8.LabelProp = global::Mono.Unix.Catalog.GetString ("Failed to export collection catalog.  \nPlease check disk space and write permissi" +
-				"ons to export location."
+			this.label8.LabelProp = global::Mono.Unix.Catalog.GetString ("Failed to export collection catalog.  \r\nPlease check disk space and write permiss" +
+				"ions to export location."
 			);
 			this.label8.Justify = ((global::Gtk.Justification)(2));
 			this.notebook1.Add (this.label8);

@@ -44,7 +44,6 @@ namespace iMetaLibrary.Scanners
                     Meta meta = new MovieMeta(file);
                     AddItem(meta);
                     newItems.Add(meta);
-
                 }
             }
 			
@@ -63,7 +62,7 @@ namespace iMetaLibrary.Scanners
 			
             TriggerAllItemsFound(newItems.ToArray());
 
-            foreach (MovieMeta meta in newItems)
+            foreach (MovieMeta meta in newItems.OrderBy(x => ((MovieMeta)x).ExistingNfoFile ? 1 : 0))
             {
                 try
                 {

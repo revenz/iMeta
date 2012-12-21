@@ -96,7 +96,7 @@ namespace iMetaLibrary.Scanners
             TvdbLib.TvdbHandler tvdbHandler = new TvdbLib.TvdbHandler(cacheProvider, Settings.TvdbApiKey);
             #endregion
 
-            foreach (Metadata.TvFileMeta meta in newItems)
+            foreach (Metadata.TvFileMeta meta in newItems.OrderBy(x => ((TvFileMeta)x).ExistingNfoFile ? 1 : 0))
             {
                 TriggerScanningItem(meta);
                 int result = meta.Load();

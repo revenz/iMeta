@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel;
+using System.IO;
 
 namespace iMetaLibrary.Metadata
 {
@@ -20,12 +21,18 @@ namespace iMetaLibrary.Metadata
         public string Filename { get; set; }
         public float Rating { get; set; }
         public bool IsNull { get; set; }
+        public bool ExistingNfoFile { get; set; }
 
         public Meta(string Filename)
         {
             this.Filename = Filename;
             this.CompletionLevel = MetaCompletionLevel.None;
             this.MetaId = Guid.NewGuid().ToString();
+
+            if (!String.IsNullOrWhiteSpace(Filename))
+            {
+                ExistingNfoFile = File.Exists(Filename.Substring(0, Filename.LastIndexOf(".") + 1) + "nfo");
+            }
         }
 
         public MetaCompletionLevel CompletionLevel { get; set; }

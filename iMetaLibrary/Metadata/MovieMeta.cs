@@ -30,6 +30,7 @@ namespace iMetaLibrary.Metadata
         private string PosterUrl { get; set; }
         private string[] FanArtUrls { get; set; }
 
+
         public MovieMeta(string Filename):base(Filename)
         {
             this.FileInfo = new VideoFileMeta();
